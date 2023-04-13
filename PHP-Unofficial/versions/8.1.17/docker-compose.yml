@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile
     container_name: ${CONTAINER_NAME}
     restart: unless-stopped
+    networks:
+      - 1panel-network
     ports:
       - "${FastCGI_Server_PORT}:9000"
     volumes:

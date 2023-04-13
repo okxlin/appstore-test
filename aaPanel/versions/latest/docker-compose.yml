@@ -3,6 +3,8 @@ services:
   aapanel:
     container_name: ${CONTAINER_NAME}
     restart: unless-stopped
+    networks:
+      - 1panel-network
     ports:
         - "${Web_Panel_Port}:7800"
         - "${HTTP_PORT}:80"
