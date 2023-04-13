@@ -1,0 +1,65 @@
+
+{  
+  "formFields": [ 
+    {  
+      "type": "number",
+      "labelZh": "面板端口",  
+      "labelEn": "Web Panel Port",  
+      "required": true,  
+      "default": 7200,  
+      "rule": "paramPort",  
+      "envKey": "Web_Panel_Port",  
+      "edit": true  
+    },
+    {  
+      "type": "number",
+      "labelZh": "HTTP端口",  
+      "labelEn": "HTTP Port",  
+      "required": true,  
+      "default": 10080,  
+      "rule": "paramPort",  
+      "envKey": "HTTP_PORT",  
+      "edit": true  
+    },
+    {  
+      "type": "number",
+      "labelZh": "HTTPS端口",  
+      "labelEn": "HTTPS Port",  
+      "required": true,  
+      "default": 10443,  
+      "rule": "paramPort",  
+      "envKey": "HTTPS_PORT",  
+      "edit": true  
+    },
+    {  
+      "type": "number",
+      "labelZh": "phpMyAdmin端口",  
+      "labelEn": "phpMyAdmin Port",  
+      "required": true,  
+      "default": 10888,  
+      "rule": "paramPort",  
+      "envKey": "phpMyAdmin_PORT",  
+      "edit": true  
+    },
+    {  
+      "type": "number",
+      "labelZh": "面板内SSH端口",  
+      "labelEn": "SSH Port",  
+      "required": true,  
+      "default": 20022,  
+      "rule": "paramPort",  
+      "envKey": "SSH_PORT",  
+      "edit": true  
+    },
+    {  
+      "type": "number",
+      "labelZh": "面板内FTP端口",  
+      "labelEn": "SSH Port",  
+      "required": true,  
+      "default": 20021,  
+      "rule": "paramPort",  
+      "envKey": "FTP_PORT",  
+      "edit": true  
+    }
+  ]  
+}
