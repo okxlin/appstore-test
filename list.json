@@ -23,7 +23,7 @@
       "shortDescEn": "Jellyfin is a multimedia application software suite",
       "type": "tool",
       "limit": 0,
-      "crossVersionUpdate": false,
+      "crossVersionUpdate": true,
       "website": "https://jellyfin.org/",
       "github": "https://github.com/jellyfin/jellyfin",
       "document": "https://jellyfin.org/docs/"
@@ -65,7 +65,7 @@
       "shortDescEn": "qBittorrent is a cross-platform open source BitTorrent client",
       "type": "tool",
       "limit": 0,
-      "crossVersionUpdate": false,
+      "crossVersionUpdate": true,
       "website": "https://www.qbittorrent.org/",
       "github": "https://github.com/qbittorrent/qBittorrent",
       "document": "http://wiki.qbittorrent.org/"
