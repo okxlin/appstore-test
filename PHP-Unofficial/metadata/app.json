@@ -1,0 +1,15 @@
+
+{  
+  "key": "PHP-Unofficial",
+  "name": "PHP-Unofficial",
+  "tags": ["Runtime"],
+  "versions": ["7.4.33","7.4.33-alpine","8.1.17"],
+  "shortDescZh": "PHP是一种流行的服务器端脚本语言。",
+  "shortDescEn": "PHP is a popular server-side scripting language",
+  "type": "php",
+  "limit": 0,
+  "crossVersionUpdate": false,
+  "website": "https://www.php.net/",
+  "github": "https://github.com/php/php-src",
+  "document": "https://www.php.net/docs.php"
+}

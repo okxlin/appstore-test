@@ -1,5 +1,4 @@
 {
-  "version": "v0.0.02",
   "items": [
     {
       "key": "aaPanel",
@@ -14,20 +13,6 @@
       "website": "https://www.aapanel.com/new/index.html",
       "github": "https://github.com/aaPanel/aaPanel",
       "document": "https://github.com/aaPanel/aaPanel"
-    },
-    {
-      "key": "jellyfin",
-      "name": "Jellyfin",
-      "tags": ["Tool"],
-      "versions": ["10.8.9"],
-      "shortDescZh": "Jellyfin是一套多媒体应用程序软件套装",
-      "shortDescEn": "Jellyfin is a multimedia application software suite",
-      "type": "tool",
-      "limit": 0,
-      "crossVersionUpdate": true,
-      "website": "https://jellyfin.org/",
-      "github": "https://github.com/jellyfin/jellyfin",
-      "document": "https://jellyfin.org/docs/"
     },
     {
       "key": "mdserver-web",
@@ -56,34 +41,6 @@
       "website": "https://www.qbittorrent.org/",
       "github": "https://github.com/qbittorrent/qBittorrent",
       "document": "http://wiki.qbittorrent.org/"
-    },
-    {
-      "key": "rustdesk",
-      "name": "RustDesk",
-      "tags": ["Tool"],
-      "versions": ["latest"],
-      "shortDescZh": "RustDesk是一款开源的远程桌面软件",
-      "shortDescEn": "RustDesk is an open source remote desktop software",
-      "type": "tool",
-      "limit": 0,
-      "crossVersionUpdate": false,
-      "website": "https://rustdesk.com/zh/",
-      "github": "https://github.com/rustdesk/rustdesk",
-      "document": "https://rustdesk.com/docs/zh-cn/"
-    },
-    {
-      "key": "ALS",
-      "name": "ALS",
-      "tags": ["Tool"],
-      "versions": ["latest"],
-      "shortDescZh": "Another Looking-glass Server，测速服务端",
-      "shortDescEn": "Another Looking-glass Server,Speed measurement server",
-      "type": "tool",
-      "limit": 0,
-      "crossVersionUpdate": false,
-      "website": "https://github.com/wikihost-opensource/als",
-      "github": "https://github.com/wikihost-opensource/als",
-      "document": "https://github.com/wikihost-opensource/als"
     }
  ]
 }

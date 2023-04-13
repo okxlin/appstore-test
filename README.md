@@ -34,3 +34,30 @@ rm /opt/1panel/resource/localApps/localApps.zip  # 删除下载的ZIP文件
 然后将`list.json.bak`里的原有参数按照格式粘贴到`list.json`里即可。
 
 然后应用商店刷新本地应用即可。
+
+
+## 3.备注
+
+**`list.json`为不完整配置，未在里头的未完全适配应用商店面板操作**
+
+**但是支持直接终端运行。**
+
+以rustdesk为例
+
+```shell
+# 进入 rustdesk 的最新版本目录
+cd /opt/1panel/resource/localApps/rustdesk/versions/latest/
+
+# 复制 .env.sample 为 .env
+cp .env.sample .env
+
+# 编辑 .env 文件，修改参数
+nano .env
+
+# 启动 RustDesk
+docker-compose up -d
+
+# 查看连接所需密钥
+cat ./data/hbbs/id_ed25519.pub
+
+```
