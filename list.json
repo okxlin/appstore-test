@@ -15,13 +15,13 @@
       "document": "https://github.com/aaPanel/aaPanel"
     },
     {
-      "key": "Jellyfin",
+      "key": "jellyfin",
       "name": "Jellyfin",
-      "tags": ["Tools"],
+      "tags": ["Tool"],
       "versions": ["10.8.9"],
       "shortDescZh": "Jellyfin是一套多媒体应用程序软件套装",
       "shortDescEn": "Jellyfin is a multimedia application software suite",
-      "type": "Tools",
+      "type": "Tool",
       "limit": 0,
       "crossVersionUpdate": false,
       "website": "https://jellyfin.org/",
@@ -71,13 +71,13 @@
       "document": "http://wiki.qbittorrent.org/"
     },
     {
-      "key": "RustDesk",
+      "key": "rustdesk",
       "name": "RustDesk",
-      "tags": ["Tools"],
+      "tags": ["Tool"],
       "versions": ["latest"],
       "shortDescZh": "RustDesk是一款开源的远程桌面软件",
       "shortDescEn": "RustDesk is an open source remote desktop software",
-      "type": "Tools",
+      "type": "Tool",
       "limit": 0,
       "crossVersionUpdate": false,
       "website": "https://rustdesk.com/zh/",
