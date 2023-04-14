@@ -17,7 +17,6 @@
       "labelEn": "Media folder path",  
       "required": true,  
       "default": "./data/media",  
-      "rule": "paramCommon",  
       "envKey": "MEDIA_FOLDER_PATH",  
       "edit": true  
     },
@@ -27,7 +26,6 @@
       "labelEn": "Cache folder path",  
       "required": true,  
       "default": "./data/cache",  
-      "rule": "paramCommon",  
       "envKey": "CACHE_FOLDER_PATH",  
       "edit": true  
     }
