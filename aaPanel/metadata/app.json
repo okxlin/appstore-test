@@ -2,11 +2,11 @@
 {  
   "key": "aaPanel",
   "name": "aaPanel",
-  "tags": ["WebSite"],
+  "tags": ["Tool"],
   "versions": ["latest"],
   "shortDescZh": "宝塔面板国际版，开源的Linux面板。",
   "shortDescEn": "BT Panel International Edition, the open source Linux panel.",
-  "type": "website",
+  "type": "tool",
   "limit": 0,
   "crossVersionUpdate": false,
   "website": "https://www.aapanel.com/new/index.html",

@@ -2,11 +2,11 @@
 {  
   "key": "mdserver-web",
   "name": "mdserver-web",
-  "tags": ["WebSite"],
+  "tags": ["Tool"],
   "versions": ["latest"],
   "shortDescZh": "一款简单Linux面板服务。",
   "shortDescEn": "A simple Linux panel service",
-  "type": "website",
+  "type": "tool",
   "limit": 0,
   "crossVersionUpdate": false,
   "website": "https://hub.docker.com/r/ddsderek/mw",

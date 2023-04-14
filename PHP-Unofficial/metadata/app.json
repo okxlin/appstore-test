@@ -2,11 +2,11 @@
 {  
   "key": "PHP-Unofficial",
   "name": "PHP-Unofficial",
-  "tags": ["Runtime"],
+  "tags": ["Tool"],
   "versions": ["7.4.33","7.4.33-alpine","8.1.17"],
   "shortDescZh": "PHP是一种流行的服务器端脚本语言。",
   "shortDescEn": "PHP is a popular server-side scripting language",
-  "type": "php",
+  "type": "tool",
   "limit": 0,
   "crossVersionUpdate": false,
   "website": "https://www.php.net/",
