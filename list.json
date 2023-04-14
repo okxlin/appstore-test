@@ -55,6 +55,20 @@
       "website": "https://jellyfin.org/",
       "github": "https://github.com/jellyfin/jellyfin",
       "document": "https://jellyfin.org/docs/"
+    },
+    {  
+      "key": "ALS",
+      "name": "ALS",
+      "tags": ["Tool"],
+      "versions": ["latest"],
+      "shortDescZh": "Another Looking-glass Server，测速服务端",
+      "shortDescEn": "Another Looking-glass Server,Speed measurement server",
+      "type": "tool",
+      "limit": 0,
+      "crossVersionUpdate": false,
+      "website": "https://github.com/wikihost-opensource/als",
+      "github": "https://github.com/wikihost-opensource/als",
+      "document": "https://github.com/wikihost-opensource/als"
     }
  ]
 }
