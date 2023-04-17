@@ -1,0 +1,14 @@
+{  
+  "key": "chatgpt-web",
+  "name": "chatgpt-web",
+  "tags": ["Tool"],
+  "versions": ["latest"],
+  "shortDescZh": "使用express和vue3搭建的支持ChatGPT双模型演示网页。",
+  "shortDescEn": "ChatGPT-enabled dual-model demo page built with express and vue3.",
+  "type": "tool",
+  "limit": 0,
+  "crossVersionUpdate": true,
+  "website": "https://github.com/Chanzhaoyu/chatgpt-web",
+  "github": "https://github.com/Chanzhaoyu/chatgpt-web",
+  "document": "https://github.com/Chanzhaoyu/chatgpt-web"
+}

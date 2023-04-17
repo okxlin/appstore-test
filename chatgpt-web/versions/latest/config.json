@@ -1,0 +1,140 @@
+{  
+  "formFields": [ 
+    {  
+      "type": "number",
+      "labelZh": "网页端口",  
+      "labelEn": "WebUI Port",  
+      "required": true,  
+      "default": 40021,  
+      "rule": "paramPort",  
+      "envKey": "PANEL_APP_PORT_HTTP",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "OPENAI ACCESS TOKEN(与OPENAI API KEY至少填一个)",  
+      "labelEn": "OPENAI ACCESS TOKEN (fill in at least one with OPENAI API KEY)",  
+      "required": false,  
+      "default": "",  
+      "envKey": "ACCESS_TOKEN",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "API反向代理，可选(OPENAI ACCESS TOKEN时默认启用,需要注意可用性)",  
+      "labelEn": "API reverse proxy, optional (enabled by default when OPENAI ACCESS TOKEN, need to pay attention to availability)",  
+      "required": false,  
+      "default": "https://bypass.duti.tech/api/conversation",  
+      "envKey": "REVERSE_PROXY",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "OPENAI API KEY(与OPENAI ACCESS TOKEN至少填一个)",  
+      "labelEn": "OPENAI API KEY (fill in at least one with OPENAI ACCESS TOKEN)",  
+      "required": false,  
+      "default": "",  
+      "envKey": "API_KEY",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "API模型，可选，设置OPENAI API KEY时可用(https://platform.openai.com/docs/models)",  
+      "labelEn": "API model, optional, available when setting OPENAI API KEY(https://platform.openai.com/docs/models)",  
+      "required": false,  
+      "default": "gpt-3.5-turbo",  
+      "envKey": "API_MODEL",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "API接口地址，可选，设置OPENAI API KEY时可用",  
+      "labelEn": "API interface address, optional, available when setting OPENAI API KEY",  
+      "required": false,  
+      "default": "https://api.openai.com",  
+      "envKey": "API_BASE_URL",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "访问权限密钥，可选(强烈建议填写)",  
+      "labelEn": "Access rights key, optional (recommended)",  
+      "required": false,  
+      "default": "",  
+      "envKey": "SECRET_KEY",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "每小时最大请求次数，可选，默认无限",  
+      "labelEn": "Maximum number of requests per hour, optional, default unlimited",  
+      "required": false,  
+      "default": "0",  
+      "envKey": "REQUEST_LIMIT",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "超时，单位毫秒，可选",  
+      "labelEn": "Timeout, in milliseconds, optional",  
+      "required": false,  
+      "default": "60000",  
+      "envKey": "TIMEOUT",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "Socks代理地址，可选，和Socks代理端口一起时生效",  
+      "labelEn": "Socks proxy address, optional, effective when combined with Socks proxy port",  
+      "required": false,  
+      "default": "",  
+      "envKey": "PROXY_HOST",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "Socks代理端口，可选，和Socks代理地址一起时生效",  
+      "labelEn": "Socks proxy port, optional, effective when combined with Socks proxy address",  
+      "required": false,  
+      "default": "",  
+      "envKey": "PROXY_PORT",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "Socks代理用户名，可选，和Socks代理地址一起时生效",  
+      "labelEn": "Socks proxy user name, optional, effective when combined with Socks proxy address",  
+      "required": false,  
+      "default": "",  
+      "envKey": "PROXY_USERNAME",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "Socks代理密码，可选，和Socks代理地址一起时生效",  
+      "labelEn": "Socks proxy password, optional, effective when combined with Socks proxy address",  
+      "required": false,  
+      "default": "",  
+      "envKey": "PROXY_PASSWORD",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "HTTPS代理，可选，支持http，https，socks5",  
+      "labelEn": "HTTPS proxy, optional, supports http, https, socks5",  
+      "required": false,  
+      "default": "",  
+      "envKey": "HTTPS_PROXY",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "获取ACCESS_TOKEN：https://chat.openai.com/api/auth/session",  
+      "labelEn": "Get ACCESS_TOKEN: https://chat.openai.com/api/auth/session",  
+      "required": false,  
+      "default": "这是一个提示/This is a tip",  
+      "edit": false  
+    }
+  ]  
+}
+
