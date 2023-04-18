@@ -1,0 +1,13 @@
+{
+  "formFields": [
+    {
+      "type": "text",
+      "labelZh": "端口",
+      "labelEn": "Port",
+      "required": true,
+      "default": "127.0.0.1:11211",
+      "envKey": "PANEL_APP_PORT_HTTP",
+      "edit": true 
+    }
+  ]
+}
