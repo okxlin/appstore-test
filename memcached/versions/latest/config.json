@@ -8,6 +8,15 @@
       "default": "127.0.0.1:11211",
       "envKey": "PANEL_APP_PORT_HTTP1",
       "edit": true 
+    },
+    {
+      "type": "number",
+      "labelZh": "内存最大占用量(MB)",
+      "labelEn": "Maximum memory usage(MB)",
+      "required": true,
+      "default": "64",
+      "envKey": "MEM_CACHED",
+      "edit": true 
     }
   ]
 }

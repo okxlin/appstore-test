@@ -7,7 +7,7 @@ services:
       - 1panel-network
     ports:
       - "${PANEL_APP_PORT_HTTP1}:11211"
-    command: memcached -m 64
+    command: memcached -m ${MEM_CACHED}
     image: "memcached:1.6.19-alpine3.17"
     labels:  
       createdBy: "Apps"
