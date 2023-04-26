@@ -56,11 +56,13 @@
       "edit": true  
     },
     {  
-      "type": "text",
+      "type": "password",
       "labelZh": "访问权限密钥，可选(强烈建议填写)",  
       "labelEn": "Access rights key, optional (recommended)",  
       "required": false,  
-      "default": "",  
+      "default": "chatgptweb",  
+      "random": true,  
+      "rule": "paramComplexity", 
       "envKey": "SECRET_KEY",  
       "edit": true  
     },
