@@ -12,7 +12,6 @@ services:
       NOVNC_LANGUAGE: "zh_Hans"
     ports:
       - "${PANEL_APP_PORT_HTTP}:5800"
-      - "${VNC_PORT}:5900"
     volumes:
       - "${CONFIG_PATH}:/config"
       - "${DOWNLOAD_PATH}:/config/baidunetdiskdownload"

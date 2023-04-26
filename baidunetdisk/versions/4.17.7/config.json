@@ -12,16 +12,6 @@
       "edit": true  
     },
     {  
-      "type": "number",
-      "labelZh": "VNC端口",  
-      "labelEn": "VNC Port",  
-      "required": true,  
-      "default": 40031,  
-      "rule": "paramPort",  
-      "envKey": "VNC_PORT",  
-      "edit": true  
-    },
-    {  
       "type": "password",
       "labelZh": "访问密码",  
       "labelEn": "Access Password",  
