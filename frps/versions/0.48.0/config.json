@@ -1,0 +1,21 @@
+{  
+  "formFields": [ 
+    {  
+      "type": "text",
+      "labelZh": "配置文件路径",  
+      "labelEn": "Configuration file path",  
+      "required": true,  
+      "default": "./data/frps.ini",  
+      "envKey": "CONFIG_FILE_PATH",  
+      "edit": true  
+    },
+    {  
+      "type": "text",
+      "labelZh": "记得编辑frps.ini获得更多功能",  
+      "labelEn": "Remember to edit frps.ini for more features",  
+      "required": false,  
+      "default": "这是一个提示/This is a tip",  
+      "edit": false  
+    }
+  ]  
+}

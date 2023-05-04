@@ -1,0 +1,11 @@
+version: "3"
+services:
+  frps:
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    network_mode: "host"
+    volumes:
+        - "${CONFIG_FILE_PATH}:/etc/frp/frps.ini"
+    image: "snowdreamtech/frps:0.48.0"
+    labels:  
+      createdBy: "Apps"

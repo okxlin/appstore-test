@@ -1,0 +1,14 @@
+{  
+  "key": "frps",
+  "name": "frps-frp服务端",
+  "tags": ["Tool"],
+  "versions": ["0.48.0","latest"],
+  "shortDescZh": "frp是一种反向代理工具，常用于内网穿透",
+  "shortDescEn": "frp is a reverse proxy tool that is commonly used for intranet penetration",
+  "type": "tool",
+  "limit": 0,
+  "crossVersionUpdate": true,
+  "website": "https://github.com/fatedier/frp",
+  "github": "https://github.com/fatedier/frp",
+  "document": "https://github.com/fatedier/frp/blob/dev/README_zh.md"
+}
