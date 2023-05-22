@@ -1,0 +1,26 @@
+additionalProperties:
+    formFields:
+        - default: 21116
+          edit: true
+          envKey: HBBS_PORT
+          labelEn: hbbs port (used with IP/domain)
+          labelZh: hbbs端口(配合IP/域名使用)
+          required: true
+          rule: paramPort
+          type: number
+        - default: 21117
+          edit: true
+          envKey: HBBR_PORT
+          labelEn: hbbr port (client relay server port)
+          labelZh: hbbr端口(客户端中继服务器端口)
+          required: true
+          rule: paramPort
+          type: number
+        - default: 172.17.0.1
+          edit: true
+          envKey: HOST_ADDRESS
+          labelEn: IP address or domain name (must change item)
+          labelZh: IP地址或域名(必改项)
+          required: true
+          rule: paramCommon
+          type: text
