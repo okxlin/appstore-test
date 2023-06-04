@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: 设置 Octokit
-        uses: actions/github-script@v5
+        uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUBTOKEN }}
           script: |
@@ -32,7 +32,7 @@ jobs:
         run: npm install
 
       - name: 导入 Core 模块
-        uses: actions/github-script@v5
+        uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -40,7 +40,7 @@ jobs:
             core.exportVariable('PATH', `${process.env.PATH}:${process.env.RUNNER_TEMP}/_github_home/node_modules/.bin`);
 
       - name: 检查发布说明
-        uses: actions/github-script@v5
+        uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
