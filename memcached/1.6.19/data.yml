@@ -1,12 +1,13 @@
 additionalProperties:
     formFields:
-        - default: 127.0.0.1:11211
+        - default: 11211
           edit: true
-          envKey: PANEL_APP_PORT_HTTP1
+          envKey: PANEL_APP_PORT_HTTP
           labelEn: Port
           labelZh: 端口
           required: true
-          type: text
+          rule: paramPort
+          type: number
         - default: '64'
           edit: true
           envKey: MEM_CACHED

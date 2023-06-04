@@ -1,15 +1,16 @@
 additionalProperties:
     formFields:
-        - default: 127.0.0.1:9002
+        - default: 9002
           edit: true
-          envKey: FastCGI_Server_PORT
+          envKey: PANEL_APP_PORT_HTTP
           labelEn: Port
           labelZh: 端口
           required: true
-          type: text
+          rule: paramPort
+          type: number
         - default: /opt/1panel/apps/openresty/OpenResty/www
           edit: true
-          envKey: Site_Path
+          envKey: SITE_PATH
           labelEn: Website directory file path
           labelZh: 网站目录文件路径
           required: true

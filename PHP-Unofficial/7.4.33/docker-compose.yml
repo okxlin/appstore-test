@@ -5,15 +5,15 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: ${CONTAINER_NAME}
-    restart: unless-stopped
+    restart: always
     networks:
       - 1panel-network
     ports:
-      - "${FastCGI_Server_PORT}:9000"
+      - "${PANEL_APP_PORT_HTTP}:9000"
     volumes:
       - "./data/php.ini:/usr/local/etc/php/php.ini"
       - "./data/php-fpm.conf:/usr/local/etc/php-fpm.d/www.conf"
-      - "${Site_Path}:/www"
+      - "${SITE_PATH}:/www"
     labels:  
       createdBy: "Apps" 
 

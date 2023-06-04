@@ -5,7 +5,7 @@ title: PHP是一种流行的服务器端脚本语言
 type: 工具
 description: PHP是一种流行的服务器端脚本语言
 additionalProperties:
-    key: PHP-Unofficial
+    key: php-unofficial
     name: PHP-Unofficial
     tags:
         - Tool

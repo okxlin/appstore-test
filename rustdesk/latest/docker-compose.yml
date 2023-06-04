@@ -2,7 +2,7 @@ version: '3'
 services:
   hbbs:
     container_name: ${CONTAINER_NAME}_hbbs
-    restart: unless-stopped
+    restart: always
     ports:
       - "21115:21115" #NAT类型测试
       - "${HBBS_PORT}:21116" # 自定义 hbbs 映射端口
@@ -26,7 +26,7 @@ services:
 
   hbbr:
     container_name: ${CONTAINER_NAME}_hbbr
-    restart: unless-stopped
+    restart: always
     ports:
       - ${HBBR_PORT}:21117 # 自定义 hbbr 映射端口
     command: hbbr -k _
