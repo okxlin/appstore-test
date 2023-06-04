@@ -43,7 +43,7 @@ jobs:
           for file in "${files[@]}"; do
             if [[ $file == *"docker-compose.yml"* ]]; then
               app_name=$(echo $file | cut -d'/' -f 2)
-              git add "apps/$app_name/*" && git commit -m "Update app version" --no-verify && git push origin localApps || true
+              git add "$app_name/*" && git commit -m "Update app version" --no-verify && git push origin localApps || true
             fi
           done
 
