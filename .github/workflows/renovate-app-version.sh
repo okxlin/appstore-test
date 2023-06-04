@@ -40,7 +40,10 @@ do
       continue
     fi
 
-    # 将旧版本号的目录名改为提取的版本号
-    mv $app_name/$old_version $app_name/$trimmed_version
+    # 获取当前docker-compose文件所在的目录路径
+    current_directory=$(dirname "$docker_compose_file")
+
+    # 修改当前目录名为提取的版本号
+    mv "$current_directory" "$app_name/$trimmed_version"
   fi
 done
