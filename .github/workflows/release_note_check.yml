@@ -20,13 +20,13 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const { Octokit } = require("@octokit/rest");
+            const { Octokit } = require("@octokit/core");
             const octokit = new Octokit();
 
       - name: 安装 Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: 安装依赖
         run: npm install
@@ -45,7 +45,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const core = require('@actions/core');
-            const { Octokit } = require("@octokit/rest");
+            const { Octokit } = require("@octokit/core");
             const octokit = new Octokit();
             const pr = context.payload.pull_request;
             const releaseNoteRegex = /(fix|feat)/i;
