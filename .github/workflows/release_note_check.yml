@@ -20,7 +20,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUBTOKEN }}
           script: |
-            const { Octokit } = require("@octokit/core");
+            const { Octokit } = require("@octokit/rest");
             const octokit = new Octokit();
 
       - name: 安装 Node.js
@@ -32,12 +32,7 @@ jobs:
         run: npm install
 
       - name: 导入 Core 模块
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const core = require('@actions/core');
-            core.exportVariable('PATH', `${process.env.PATH}:${process.env.RUNNER_TEMP}/_github_home/node_modules/.bin`);
+        run: npm install @actions/core
 
       - name: 检查发布说明
         uses: actions/github-script@v5
@@ -45,8 +40,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const core = require('@actions/core');
-            const { Octokit } = require("@octokit/core");
-            const octokit = new Octokit();
             const pr = context.payload.pull_request;
             const releaseNoteRegex = /(fix|feat)/i;
             const releaseNoteTitle = pr.title.toLowerCase();
@@ -113,7 +106,7 @@ jobs:
               let hasApprovedLabel = labels.data.some(label => label.name.toLowerCase() === approvedLabel);
               if (!hasApprovedLabel) {
                 const label = 'do-not-merge/release-note-label-needed';
-               await addLabelToPR(label);
+                await addLabelToPR(label);
                 console.log(`已向 PR 添加标签 '${label}'。Label '${label}' added to the PR。`);
 
                 const issueComment = getIssueComment(pr.user.login);
