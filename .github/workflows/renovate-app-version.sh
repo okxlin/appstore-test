@@ -1,49 +1,26 @@
 #!/bin/bash
-# 此脚本将docker-compose.yml文件中的版本号复制到config.json文件中。
+# This script copies the version from docker-compose.yml to config.json.
 
 app_name=$1
 old_version=$2
 
-# 查找/$app_name目录下的所有docker-compose文件（应该只有一个）
-docker_compose_files=$(find $app_name/$old_version -name docker-compose.yml)
+# find all docker-compose files under apps/$app_name (there should be only one)
+docker_compose_files=$(find apps/$app_name/$old_version -name docker-compose.yml)
 
-# 声明一个关联数组，用于存储每个app_name对应的排除版本号
-declare -A excluded_versions
-excluded_versions["qBittorrent"]="4.3.5"
-excluded_versions["php-unofficial"]="all"
-# 如果需要，可以添加更多的排除版本号
-
-# 遍历每个docker-compose文件
 for docker_compose_file in $docker_compose_files
 do
-  # 如果app_name和版本号匹配了排除版本号，跳过处理
-  if [[ "${excluded_versions[$app_name]}" == "all" ]]; then
-    continue
-  fi
+	# Assuming that the app version will be from the first docker image
+	first_service=$(yq '.services | keys | .[0]' $docker_compose_file)
 
-  # 假设应用的版本号位于第一个docker镜像的标签中
-  first_service=$(yq '.services | keys | .[0]' $docker_compose_file)
+	image=$(yq .services.$first_service.image $docker_compose_file)
 
-  # 获取镜像名称
-  image=$(yq .services.$first_service.image $docker_compose_file)
+	# Only apply changes if the format is <image>:<version>
+	if [[ "$image" == *":"* ]]; then
+	  version=$(cut -d ":" -f2- <<< "$image")
 
-  # 只有当镜像名称的格式为<image>:<version>时才应用更改
-  if [[ "$image" == *":"* ]]; then
-    # 提取版本号
-    version=$(cut -d ":" -f2- <<< "$image")
+	  # Trim the "v" prefix
+	  trimmed_version=${version/#"v"}
 
-    # 去掉版本号开头的"v"前缀
-    trimmed_version=${version/#"v"}
-
-    # 如果app_name和版本号匹配了排除版本号，跳过处理
-    if [[ "${excluded_versions[$app_name]}" == "$trimmed_version" ]]; then
-      continue
+      mv apps/$app_name/$old_version apps/$app_name/$trimmed_version
     fi
-
-    # 获取当前docker-compose文件所在的目录路径
-    current_directory=$(dirname "$docker_compose_file")
-
-    # 修改当前目录名为提取的版本号
-    mv "$current_directory" "$app_name/$trimmed_version"
-  fi
 done

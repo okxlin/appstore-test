@@ -8,15 +8,24 @@
 
 
 ### 2.1 
-- 当`/opt/1panel/resource/apps/local`文件夹下没有任何内容，则可以
+- 方式一：使用`git` 方式获取应用到`/opt/1panel/resource/apps/local`文件夹下
 
 ```shell
-git clone -b  localApps https://github.com/okxlin/appstore /opt/1panel/resource/apps/local
+# 克隆名为 localApps 的分支的仓库到 /opt/1panel/resource/apps/local 目录下
+git clone -b localApps https://github.com/okxlin/appstore /opt/1panel/resource/apps/local
+
+# 将 /opt/1panel/resource/apps/local/apps 目录下的所有文件移动到 /opt/1panel/resource/apps/local/ 目录下
+mv /opt/1panel/resource/apps/local/apps/* /opt/1panel/resource/apps/local/
+
+# 删除 /opt/1panel/resource/apps/local/apps 目录及其内容
+rm -r /opt/1panel/resource/apps/local/apps
+
 ```
+
 然后应用商店刷新本地应用即可。
 
 ###  2.2
--  当`/opt/1panel/resource/apps/local`文件夹下已经存在文件内容，
+-  方式二：使用压缩包方式获取应用到`/opt/1panel/resource/apps/local`文件夹下
 
 ```shell
 cd /opt/1panel/resource/apps/local  # 进入目标目录
@@ -25,9 +34,9 @@ wget https://github.com/okxlin/appstore/archive/refs/heads/localApps.zip  # 从G
 
 unzip localApps.zip  # 解压下载的ZIP文件
 
-cd appstore-localApps  # 进入解压后的目录
+cd ./appstore-localApps/apps  # 进入解压后的目录
 
-mv ./* ..  # 将所有文件和目录移动到父目录中
+mv ./* /opt/1panel/resource/apps/local/  # 将所有文件和目录移动到指定目录中
 
 cd /opt/1panel/resource/apps/local  # 进入目标目录
 
@@ -36,7 +45,6 @@ rm -r /opt/1panel/resource/apps/local/appstore-localApps  # 删除解压后的�
 rm /opt/1panel/resource/apps/local/localApps.zip  # 删除下载的ZIP文件
 
 ```
-
 
 然后应用商店刷新本地应用即可。
 
