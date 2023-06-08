@@ -13,7 +13,7 @@ additionalProperties:
     shortDescEn: RustDesk is an open source remote desktop software
     type: tool
     crossVersionUpdate: false
-    limit: 1
+    limit: 0
     recommend: 0
     website: https://rustdesk.com/zh/
     github: https://github.com/rustdesk/rustdesk
