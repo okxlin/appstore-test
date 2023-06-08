@@ -4,10 +4,11 @@ services:
     container_name: ${CONTAINER_NAME}_hbbs
     restart: always
     ports:
-      - "21115:21115" #NAT类型测试
+      - "${NAT_TEST_PORT}:21115" #NAT类型测试
       - "${HBBS_PORT}:21116" # 自定义 hbbs 映射端口
       - "${HBBS_PORT}:21116/udp" #自定义 hbbs 映射端口
-      - "21118:21118" #网页客户端支持端口
+      - "${WEB_CLIENT_PORT1}:21118" #网页客户端支持端口
+      - "${WEB_CLIENT_PORT2}:21119" #网页客户端支持端口
     command: hbbs -r ${HOST_ADDRESS}:${HBBS_PORT} -k _ # 填入个人域名或 IP +  暴露端口
     volumes:
       - "./data/hbbs:/root" # 自定义挂载目录
@@ -45,5 +46,5 @@ services:
 
 networks:  
   1panel-network:  
-    external: false
+    external: true
 
