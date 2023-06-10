@@ -14,6 +14,11 @@ services:
       - "RPC_SECRET=${TOKEN}"
       - "RPC_PORT=${RPC_PORT_VALUE}"
       - "LISTEN_PORT=${PANEL_APP_PORT_HTTP}"
+      - "DISK_CACHE=64M"
+      - "IPV6_MODE=true"
+      - "UPDATE_TRACKERS=true"
+      - "CUSTOM_TRACKER_URL=${TRACKER_URL}"
+      - "TZ=Asia/Shanghai"
     volumes:
       - "${CONFIG_PATH}:/config"
       - "${DOWNLOAD_PATH}:/downloads"
