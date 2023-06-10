@@ -1,8 +1,8 @@
 name: QianDao
 tags:
-    - WebSite
+    - 工具
 title: 一个HTTP请求定时任务自动执行框架
-type: 建站
+type: 工具
 description: 一个HTTP请求定时任务自动执行框架
 additionalProperties:
     key: qiandao

@@ -61,7 +61,7 @@ services:
       # SQLAlchmey是否使用LIFO算法，默认为True
       # - QIANDAO_SQL_POOL_USE_LIFO=True
       # 需要使用Redis或RedisCloud时，设置为http://rediscloud:密码@hostname:port
-       - REDISCLOUD_URL=${REDIS_PROTOCOL}://rediscloud:${REDIS_PWD}${REDIS_HOST}:${REDIS_PORT}
+      # - REDISCLOUD_URL=http://rediscloud:密码@hostname:port
       # 默认为1
       # - REDIS_DB_INDEX=1
       # (限Redis连接已开启)登录用户或IP在1小时内分数=操作失败次数*相应惩罚分值，分数达到evil上限后自动封禁直至下一小时周期

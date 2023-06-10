@@ -1,3 +1,15 @@
+# 说明
+## 设置管理员
+- 1.先注册一个账户.
+- 2.进入容器运行以下命令
+
+```
+python ./chrole.py your@email.address admin
+```
+- 3.需要先登出再登陆后才能获得完整管理员权限。
+
+
+# 原始相关
 <p align="center">
    <a href="https://github.com/qd-today/qd">
    <img style="border-radius:50%" width="150" src="https://fastly.jsdelivr.net/gh/qd-today/qd@master/web/static/img/icon.png">
