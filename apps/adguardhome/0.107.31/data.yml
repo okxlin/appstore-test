@@ -3,7 +3,7 @@ additionalProperties:
         - default: 20053
           edit: true
           envKey: PLAIN_DNS_PORT
-          labelEn: plain DNS port
+          labelEn: Plain DNS port
           labelZh: 普通DNS端口
           required: true
           rule: paramPort
@@ -35,7 +35,7 @@ additionalProperties:
         - default: 23001
           edit: true
           envKey: PANEL_APP_PORT_HTTP
-          labelEn: initial setup web page port
+          labelEn: Initial setup web page port
           labelZh: 初始设置网页端口
           required: true
           rule: paramPort
@@ -90,7 +90,7 @@ additionalProperties:
         - default: ./data/conf
           edit: true
           envKey: CONFIG_PATH
-          labelEn: Configuration file path
-          labelZh: 配置文件路径
+          labelEn: Configuration folder path
+          labelZh: 配置文件夹路径
           required: true
           type: text
