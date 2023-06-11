@@ -32,11 +32,11 @@ additionalProperties:
           required: true
           rule: paramPort
           type: number
-        - default: 23000
+        - default: 23001
           edit: true
           envKey: PANEL_APP_PORT_HTTP
-          labelEn: web port
-          labelZh: 网页端口
+          labelEn: initial setup web page port
+          labelZh: 初始设置网页端口
           required: true
           rule: paramPort
           type: number
