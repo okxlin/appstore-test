@@ -486,7 +486,7 @@ if($get['method'] == 'export') {
 			"# Type: $apptype\n".
 			"# Table Prefix: $tablepre\n".
 			"# $dbcharset\n".
-			"# $apptype Home: http://www.comsenz.com\n".
+			"# $apptype Home: https://www.discuz.vip\n".
 			"# Please visit our website for newest infomation about $apptype\n".
 			"# --------------------------------------------------------\n\n\n".
 			$sqldump;

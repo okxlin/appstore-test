@@ -1,11 +1,11 @@
-18d9bb77a0b08c1356523b04d21e6c07 *./admin.php
+67c044bb98ac238582a37eb3a985e2a1 *./admin.php
 ac32c9e1f5286d86a4fe2ec70d4c42bb *./api
-e62c9ce003fec1e6c66d0eff0f7a5036 *./avatar.php
+c672a2ff4f956feb63346d9ca833b3d2 *./avatar.php
 96eff00a176146218960e50347d9cf49 *./control
 29c98250b07e4079f3906de984a27ef6 *./crossdomain.xml
 cba7beb32835268b64190bc95a4ba48c *./data
 5861434debb0780903e517525c22351e *./images
-d959e011617005de6672c0046cdbfc1c *./index.php
+813f7bcb0b40fe35884a229c6777c406 *./index.php
 0d673a9b9f136a7a6b6b25d4ff4bc1fd *./install
 b7f758bee1311bf266967be187fb748f *./js
 ccf267e9dcaf9ff2d315012060a7e1d6 *./lib
@@ -21,7 +21,7 @@ d41d8cd98f00b204e9800998ecf8427e *data/cache/index.htm
 7215ee9c7d9dc229d2921a40e899ec5f *data/logs/index.htm
 d41d8cd98f00b204e9800998ecf8427e *data/tmp/index.htm
 d41d8cd98f00b204e9800998ecf8427e *data/view/index.htm
-e54e1f064dc175e0e3744ecf7bdbcde6 *api/dbbak.php
+3a9a7fa147580ed1329c8b73b5e5a928 *api/dbbak.php
 d41d8cd98f00b204e9800998ecf8427e *api/index.htm
 09bc093a87ad22670b181836788d2349 *control/admin/admin.php
 d79eb0c260ac74f61c2b4842d23cedee *control/admin/app.php
@@ -66,7 +66,7 @@ c0dec6b7bcbf660a3fe9d9de1d782629 *model/feed.php
 f250ba1beaaf79955d80d969f38e12d9 *model/mail.php
 6dd2eac5297dd46f1e05035da142abe9 *model/misc.php
 f03a2c4b668ed2f8d3576862c7595321 *model/note.php
-bb9c95148eda27df11628934ac5e3963 *model/plugin.php
+b23f0e5290103a3ea89fe1e3275f7826 *model/plugin.php
 e07b645ad6318c754fe055d1abd38f66 *model/pm.php
 ba787d675b6b8db7549ae1a1eb97dc20 *model/setting.php
 d7b379d38fbc0e8a120454a334a54499 *model/tag.php
@@ -185,7 +185,7 @@ c8323955b8b6a4393372de9e122853a3 *js/calendar.js
 0e8249b8c83ab93350d6864e106da182 *js/common.js
 7215ee9c7d9dc229d2921a40e899ec5f *js/index.htm
 904fbd9ee2c415bbee0fa4f9ccce4f83 *js/pm_editor.js
-e57df09d59e34cc21c3b4c1907049ec5 *release/release.php
+14442d40730b31d5b761a7e92f33a23b *release/release.php
 f5ca4573eda7e4e57c93e7f56893b354 *view/default/admin.lang.php
 69fd09d092f61d05e4b31e8e6ad09dbd *view/default/admin_admin.htm
 c535ef1e2e66bf778a7f45ef38f07b5b *view/default/admin_app.htm
@@ -197,7 +197,7 @@ e7c9d9336c808d322ddd304d583d8523 *view/default/admin_cache.htm
 602038f1ec76c304dc5730597357fdce *view/default/admin_feed.htm
 30dae5e21c3ac339675069db37efefc0 *view/default/admin_frame_header.htm
 56a95674b623b16fc5428927a1f866fe *view/default/admin_frame_index.htm
-f0e91d97b3c12347a7679d7a997c7ce3 *view/default/admin_frame_main.htm
+1f11784aee87740b15030ce9b919fbe7 *view/default/admin_frame_main.htm
 657aeaddc310cedcb088a47bbd242933 *view/default/admin_frame_menu.htm
 9b748ad443e19d99e6f64de338e7abae *view/default/admin_log.htm
 e78d236514f02dc3b2a9d4fa565abf25 *view/default/admin_login.htm
