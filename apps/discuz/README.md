@@ -1,3 +1,22 @@
+# 使用说明
+
+- 文件权限问题
+
+需要手动调整一下文件权限，以`root`权限执行以下命令
+```
+# 需要修改以下为具体实际路径
+chown -R www-data /opt/1panel/apps/local/discuz/xxx/data
+```
+
+- 数据库连接问题
+
+本机MySQL数据库连接可以填写为
+```
+mysql:3306
+```
+
+
+# 原始相关
 ### **简介** 
 
 Discuz! X 官方 Git (https://gitee.com/Discuz/DiscuzX) ，简体中文 UTF8 版本
