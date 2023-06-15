@@ -23,6 +23,7 @@ services:
 
 volumes:
   synapse-data:
+    external: true
 
 networks:  
   1panel-network:  

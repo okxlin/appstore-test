@@ -105,6 +105,11 @@ Shared secret as defined in server config file.
 服务器配置文件中定义的共享密钥。
 ```
 
+## 提示
+
+所有数据存放在`synapse-data`存储卷里，
+
+删除应用时，假如需要完全清除数据，还需要将`synapse-data`存储卷删除。
 
 # 原始相关
 # Synapse [![(get support on #synapse:matrix.org)](https://img.shields.io/matrix/synapse:matrix.org?label=support&logo=matrix)](https://matrix.to/#/#synapse:matrix.org) [![(discuss development on #synapse-dev:matrix.org)](https://img.shields.io/matrix/synapse-dev:matrix.org?label=development&logo=matrix)](https://matrix.to/#/#synapse-dev:matrix.org) [![(Rendered documentation on GitHub Pages)](https://img.shields.io/badge/documentation-%E2%9C%93-success)](https://matrix-org.github.io/synapse/latest/) [![(check license in LICENSE file)](https://img.shields.io/github/license/matrix-org/synapse)](LICENSE) [![(latest version released on PyPi)](https://img.shields.io/pypi/v/matrix-synapse)](https://pypi.org/project/matrix-synapse) [![(supported python versions)](https://img.shields.io/pypi/pyversions/matrix-synapse)](https://pypi.org/project/matrix-synapse)
