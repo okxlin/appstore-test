@@ -1,6 +1,6 @@
 name: flarum
 tags:
-    - WebSite
+    - 建站
 title: 新一代的论坛软件，使在线讨论变得有趣
 type: 建站
 description: 新一代的论坛软件，使在线讨论变得有趣
@@ -8,10 +8,10 @@ additionalProperties:
     key: flarum
     name: flarum
     tags:
-        - Tool
+        - WebSite
     shortDescZh: 新一代的论坛软件，使在线讨论变得有趣
     shortDescEn: The next-generation forum software that makes online discussion fun
-    type: tool
+    type: website
     crossVersionUpdate: true
     limit: 0
     recommend: 0
