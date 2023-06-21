@@ -19,6 +19,7 @@ services:
       - "REDIS_HOST=${PANEL_REDIS_DB_HOST}"
       - "REDIS_PORT=${REDIS_DB_PORT}"
       - "REDIS_PASSWORD=${PANEL_DB_ROOT_PASSWORD}"
+    tty: true
     image: celaraze/chemex:latest
     labels:  
       createdBy: "Apps"

@@ -13,7 +13,7 @@ additionalProperties:
     shortDescEn: A free, open-source, efficient and beautiful O&M asset management platform
     type: tool
     crossVersionUpdate: false
-    limit: 1
+    limit: 0
     recommend: 0
     website: https://hub.docker.com/r/celaraze/chemex
     github: https://github.com/celaraze/chemex

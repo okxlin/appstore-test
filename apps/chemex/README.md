@@ -1,11 +1,24 @@
 # 使用说明
-- 初始化数据库：
 
 如果您是第一次使用 chemex，则需要执行数据库迁移。
 
-需要打开容器，运行命令
+需要执行以下几个步骤：修改`.env`配置，打开容器页面，连接终端，运行相关命令。
+
+- 第一步，安装应用后，修改`.env`配置文件，填写`MySQL`、`redis`等相关信息
+```
+# 需要修改以下为具体实际路径
+/opt/1panel/apps/local/chemex/xxx/data/.env
+```
+
+- 第二步，容器运行命令，初始化导入数据库
 ```
 cd /var/www/html/laravel && php artisan chemex:install
+```
+容器终端会提示相关安装情况以及账户密码信息。
+
+- 第三步，容器运行命令，授予文件夹权限
+```
+chown -R www-data /var/www/html/laravel/bootstrap/cache
 ```
 
 

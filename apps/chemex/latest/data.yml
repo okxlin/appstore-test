@@ -48,7 +48,7 @@ additionalProperties:
           required: true
           rule: paramComplexity
           type: password
-        - default: 40020
+        - default: 40028
           edit: true
           envKey: PANEL_APP_PORT_HTTP
           labelEn: Port
