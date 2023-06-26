@@ -19,8 +19,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
     command:
       --lower-case-table-names=1
-      --character-set-server=utf8
-      --collation-server=utf8_general_ci
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
     labels:
       createdBy: "Apps"
 networks:
