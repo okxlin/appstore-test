@@ -1,3 +1,13 @@
+# 使用说明
+
+- 账户与密码
+
+容器功能界面找到`alist`的容器，点击终端连接到容器内部， 运行
+```
+./alist admin
+```
+# 原始相关
+
 <div align="center">
   <a href="https://alist.nn.ci"><img height="100px" alt="logo" src="https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg"/></a>
   <p><em>🗂一个支持多存储的文件列表程序，使用 Gin 和 Solidjs。</em></p>
