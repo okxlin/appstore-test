@@ -1,3 +1,9 @@
+# 使用说明
+用户名与密码可以查看容器日志获得
+
+
+# 原始相关
+
 [English Version](https://github.com/cloudreve/Cloudreve/blob/master/README.md)
 
 <h1 align="center">
