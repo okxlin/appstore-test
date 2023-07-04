@@ -1,6 +1,19 @@
+# 使用说明
+
+- 初始化设置
+
+注意：首次实例化时，访问根文件夹将生成错误。通过路径 `/admin/` 访问 `YOURLS` 管理界面
+
+假如外部访问地址设置为`http://localhost:40020`，
+
+那么需要访问`http://localhost:40020/admin/`进行初始化设置
+
+
+# 原始相关
+
 <h1 align="center">
   <a href="https://yourls.org">
-    <img src="images/yourls-logo.svg" width=66% alt="YOURLS">
+    <img src="https://raw.githubusercontent.com/YOURLS/YOURLS/master/images/yourls-logo.svg" width=66% alt="YOURLS">
   </a>
 </h1>
 
