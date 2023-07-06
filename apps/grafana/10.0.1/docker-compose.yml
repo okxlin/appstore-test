@@ -8,10 +8,14 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:3000"
     volumes:
-      - "${DATA_PATH}:/var/lib/grafana"
+      - grafana_data:/var/lib/grafana
     image: grafana/grafana:10.0.1
     labels:  
       createdBy: "Apps"
+
+volumes:
+  grafana_data:
+    external: true
 
 networks:  
   1panel-network:  

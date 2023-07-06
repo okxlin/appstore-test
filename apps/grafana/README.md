@@ -1,3 +1,22 @@
+# 使用说明
+
+默认账户与密码
+```
+username:admin
+password:admin
+```
+
+注意：应用部署前需要先创建存储卷，
+
+终端运行
+```
+docker volume create grafana_data
+```
+
+假如需要完全删除数据，除了删除容器还需要删除存储卷`grafana_data`。
+
+# 原始相关
+
 ![Grafana](https://raw.githubusercontent.com/grafana/grafana/main/docs/logo-horizontal.png)
 
 The open-source platform for monitoring and observability
