@@ -1,0 +1,20 @@
+name: Pandora
+tags:
+    - 工具
+title: 潘多拉，一个让你呼吸顺畅的ChatGPT
+type: 工具
+description: 潘多拉，一个让你呼吸顺畅的ChatGPT
+additionalProperties:
+    key: pandora
+    name: Pandora
+    tags:
+        - Tool
+    shortDescZh: 潘多拉，一个让你呼吸顺畅的ChatGPT
+    shortDescEn: Pandora, a ChatGPT that helps you breathe smoothly
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/pengzhile/pandora
+    github: https://github.com/pengzhile/pandora
+    document: https://github.com/pengzhile/pandora/blob/master/doc/wiki.md

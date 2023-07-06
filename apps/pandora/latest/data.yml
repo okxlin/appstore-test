@@ -1,0 +1,38 @@
+additionalProperties:
+    formFields:
+        - default: 40040
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: Port
+          labelZh: 端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: ./data
+          edit: true
+          envKey: DATA_PATH
+          labelEn: Data folder path
+          labelZh: 数据文件夹路径
+          required: true
+          type: text
+        - default: ''
+          edit: true
+          envKey: ACCESS_TOKEN
+          labelEn: OPENAI ACCESS TOKEN (fill in at least one with OPENAI API KEY)
+          labelZh: OPENAI ACCESS TOKEN(与OPENAI API KEY至少填一个)
+          required: false
+          type: text
+        - default: ''
+          edit: true
+          envKey: API_KEY
+          labelEn: OPENAI API KEY (fill in at least one with OPENAI ACCESS TOKEN)
+          labelZh: OPENAI API KEY(与OPENAI ACCESS TOKEN至少填一个)
+          required: false
+          type: text
+        - default: ''
+          edit: true
+          envKey: PROXY
+          labelEn: Specify the proxy in the format：protocol://user:pass@ip:port.
+          labelZh: 指定代理，格式：protocol://user:pass@ip:port。
+          required: false
+          type: text
