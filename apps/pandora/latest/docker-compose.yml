@@ -9,16 +9,15 @@ services:
       - "${PANEL_APP_PORT_HTTP}:40040"
     volumes:
       - "${DATA_PATH}:/data"
-      - "${DATA_PATH}/TOKEN.txt:/data/TOKEN.txt"
     environment:
       # 指定Access Token字符串。
       - PANDORA_ACCESS_TOKEN=${ACCESS_TOKEN}
       # 指定一个存放多Access Token的文件路径。
-      - PANDORA_TOKENS_FILE=/data/TOKEN.txt
+      #- PANDORA_TOKENS_FILE=${DATA_PATH}/TOKEN.txt
       # 指定代理，格式：protocol://user:pass@ip:port。
       - PANDORA_PROXY=${PROXY}
       # 以http服务方式启动，格式：ip:port
-      - PANDORA_SERVER=127.0.0.1:40040
+      - PANDORA_SERVER=0.0.0.0:40040
       # 使用gpt-3.5-turboAPI请求，你可能需要向OpenAI支付费用。
       - PANDORA_API=${API_KEY}
       # 启用sentry框架来发送错误报告供作者查错，敏感信息不会被发送。

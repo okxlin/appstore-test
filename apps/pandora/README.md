@@ -1,3 +1,9 @@
+# 原始相关
+
+可以国际互联的可以访问官方链接获取`ACCESS_TOKEN`
+
+[官方链接获取 AccessToken](https://chat.openai.com/api/auth/session)
+
 # Pandora
 
 潘多拉 (Pandora)，一个让你呼吸顺畅的 ChatGPT。
