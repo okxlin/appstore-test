@@ -1,3 +1,11 @@
+# 使用介绍
+
+可以国际互联的可以访问官方链接获取`ACCESS_TOKEN`
+
+[官方链接获取 AccessToken](https://chat.openai.com/api/auth/session)
+
+# 原始相关
+
 # ChatGPT Web
 
 > 声明：此项目只发布于 GitHub，基于 MIT 协议，免费且作为开源学习使用。并且不会有任何形式的卖号、付费服务、讨论群、讨论组等行为。谨防受骗。
@@ -5,6 +13,8 @@
 ![cover](https://raw.githubusercontent.com/Chanzhaoyu/chatgpt-web/main/docs/c1.png)
 ![cover2](https://raw.githubusercontent.com/Chanzhaoyu/chatgpt-web/main/docs/c2.png)
 
+- [使用介绍](#使用介绍)
+- [原始相关](#原始相关)
 - [ChatGPT Web](#chatgpt-web)
   - [介绍](#介绍)
   - [待实现路线](#待实现路线)

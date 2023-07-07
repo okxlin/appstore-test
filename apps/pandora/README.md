@@ -1,8 +1,11 @@
-# 原始相关
+# 使用说明
 
 可以国际互联的可以访问官方链接获取`ACCESS_TOKEN`
 
 [官方链接获取 AccessToken](https://chat.openai.com/api/auth/session)
+
+
+# 原始相关
 
 # Pandora
 
