@@ -1,3 +1,14 @@
+# 使用说明
+- 一个例子
+
+当搭配本机`chatgpt-web`使用时，`API反向代理`可以填写如下
+
+```
+http://go-chatgpt-api:8080/chatgpt/backend-api/conversation
+```
+
+# 原始相关
+
 # go-chatgpt-api
 
 ## 一个尝试绕过 `Cloudflare` 来使用 `ChatGPT` 接口的程序

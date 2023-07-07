@@ -8,14 +8,14 @@ additionalProperties:
           required: true
           rule: paramPort
           type: number
-        - default: 'sk-xxx'
+        - default: "sk-xxx"
           edit: true
           envKey: API_KEY
           labelEn: OPENAI API KEY
           labelZh: OPENAI API KEY
-          required: ture
+          required: true
           type: text
-       - default: chatgptnextweb
+        - default: "chatgptnextweb"
           edit: true
           envKey: SECRET_KEY
           labelEn: Access rights key, optional (recommended)
@@ -24,14 +24,14 @@ additionalProperties:
           required: false
           rule: paramComplexity
           type: password
-        - default: 'http://127.0.0.1:7890 user password'
+        - default: ""
           edit: true
           envKey: PROXY
-          labelEn: Proxy
-          labelZh: 代理地址
+          labelEn: Proxy (example：http://127.0.0.1:7890 user password)
+          labelZh: 代理地址(例子：http://127.0.0.1:7890 user password)
           required: false
           type: text
-        - default: https://api.openai.com
+        - default: "https://api.openai.com"
           edit: true
           envKey: API_BASE_URL
           labelEn: API interface address
