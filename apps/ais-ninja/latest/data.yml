@@ -86,11 +86,10 @@ additionalProperties:
           envKey: SMTP_HOST
           labelEn: SMTP HOST
           labelZh: SMTP 主机
-          random: true
           required: false
           rule: paramExtUrl
           type: text
-        - default: ""
+        - default: "587"
           edit: true
           envKey: SMTP_PORT
           labelEn: SMTP Port
@@ -137,8 +136,8 @@ additionalProperties:
         - default: ""
           edit: true
           envKey: ALI_ACCESS_SECRET
-          labelEn: Alibaba Cloud accessKey ID
-          labelZh: Alibaba Cloud accessKeySecret
+          labelEn: Alibaba Cloud accessKeySecret
+          labelZh: 阿里云 accessKeySecret
           required: false
           type: text
         - default: ""

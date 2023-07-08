@@ -1,3 +1,9 @@
+# 使用说明
+- 管理员账户密码请通过查看容器日志获取；
+- 访问地址加`/admin`即是管理员面板。
+
+# 原始相关
+
 # ais-ninja
 
 [English README]([README_en.md](https://github.com/jarvis2f/ais-ninja/blob/main/README_en.md))
