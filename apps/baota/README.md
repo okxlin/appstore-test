@@ -1,21 +1,23 @@
+# 使用说明
 
-# 本应用介绍
 这是个民间制作的"宝塔面板"的"1Panel"商店版本应用;
 
-- WebUI入口：http://IP地址:面板端口/btpanel
-- 默认账号：btpanel
-- 密码：btpanel123
-- 容器内root密码：btpanel123
+- WebUI入口：`http://IP地址:面板端口/btpanel`
+- 默认账号：`btpanel`
+- 密码：`btpaneldocker`
+- 容器默认SSH密码：`btpaneldocker`
 
 > 容器内数据
-- 网站目录:/www/wwwroot
-- MySQL目录:/www/server/data
-- 域名数据:/www/server/panel/vhost
+- 网站目录:`/www/wwwroot`
+- MySQL目录:`/www/server/data`
+- 域名数据:`/www/server/panel/vhost`
 
 
 > 原作者项目相关
 >> - https://hub.docker.com/r/btpanel/baota
+>> - https://github.com/aaPanel/BaoTa
 
+- 提示：为数据持久化运行，相关数据以存储卷方式存储。
 
 
 # 原始相关
