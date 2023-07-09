@@ -29,6 +29,8 @@ services:
       # 指定服务启动的线程数，默认为 8，Cloud模式为 4。
       - PANDORA_THREADS=4
       - PANDORA_CLOUD=CLOUD
+      - OPENAI_API_PREFIX=${API_BASE_URL}
+      - CHATGPT_API_PREFIX=${REVERSE_PROXY}
       #- OPENAI_EMAIL=${OPENAI_ACCOUNT}
       #- OPENAI_PASSWORD=${OPENAI_PASSWORD}
       #- OPENAI_MFA_CODE=${OPENAI_MFA}

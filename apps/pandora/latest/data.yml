@@ -15,10 +15,24 @@ additionalProperties:
           labelZh: 数据文件夹路径
           required: true
           type: text
-        - default: ''
+        - default: ""
           edit: true
           envKey: PROXY
           labelEn: Specify the proxy in the format：protocol://user:pass@ip:port.
           labelZh: 指定代理，格式：protocol://user:pass@ip:port。
           required: false
+          type: text
+        - default: https://ai.fakeopen.com
+          edit: true
+          envKey: API_BASE_URL
+          labelEn: OpenAI API interface address
+          labelZh: OpenAI API接口地址
+          required: true
+          type: text
+        - default: https://ai.fakeopen.com
+          edit: true
+          envKey: REVERSE_PROXY
+          labelEn: ChatGPT API reverse proxy
+          labelZh: ChatGPT API反向代理
+          required: true
           type: text
