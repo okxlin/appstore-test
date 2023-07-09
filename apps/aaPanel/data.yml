@@ -10,7 +10,7 @@ additionalProperties:
     tags:
         - Tool
     shortDescZh: 宝塔面板国际版，开源的Linux面板
-    shortDescEn: BT Panel International Edition, the open source Linux panel
+    shortDescEn: BT-Panel International Edition, the open source Linux panel
     type: tool
     crossVersionUpdate: false
     limit: 0

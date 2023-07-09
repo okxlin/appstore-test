@@ -2,7 +2,7 @@ additionalProperties:
     formFields:
         - default: 7200
           edit: true
-          envKey: Web_Panel_Port
+          envKey: PANEL_APP_PORT_HTTP
           labelEn: Web Panel Port
           labelZh: 面板端口
           required: true
@@ -26,7 +26,7 @@ additionalProperties:
           type: number
         - default: 10888
           edit: true
-          envKey: phpMyAdmin_PORT
+          envKey: PHPMYADMIN_PORT
           labelEn: phpMyAdmin Port
           labelZh: phpMyAdmin端口
           required: true
