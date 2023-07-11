@@ -105,3 +105,7 @@ docker-compose up -d
 cat ./data/hbbs/id_ed25519.pub
 
 ```
+
+## 4.应用一览
+
+![](./app-list.png)
