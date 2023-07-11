@@ -63,7 +63,7 @@ services:
       - aurora-network
     environment:
       TZ: 'Asia/Shanghai'
-    image: redis:7.0.11
+    image: redis:7.0.12
     labels:
       createdBy: Apps
 
