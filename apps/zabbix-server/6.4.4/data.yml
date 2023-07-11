@@ -48,7 +48,7 @@ additionalProperties:
           required: true
           rule: paramComplexity
           type: password
-        - default: 40047
+        - default: 10051
           edit: true
           envKey: PANEL_APP_PORT_HTTP
           labelEn: Gateway port
@@ -56,7 +56,7 @@ additionalProperties:
           required: true
           rule: paramPort
           type: number
-        - default: 40048
+        - default: 40047
           edit: true
           envKey: PANEL_APP_PORT_HTTP2
           labelEn: Port
