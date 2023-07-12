@@ -13,7 +13,6 @@ services:
       - MYSQL_DATABASE=${PANEL_DB_NAME}
       - MYSQL_USER=${PANEL_DB_USER}
       - MYSQL_PASSWORD=${PANEL_DB_USER_PASSWORD}
-      #- MYSQL_ROOT_PASSWORD=root_pwd
       - ZBX_JAVAGATEWAY=zabbix-java-gateway
     image: zabbix/zabbix-server-mysql:alpine-6.4.4
     depends_on:
@@ -41,7 +40,6 @@ services:
       - MYSQL_DATABASE=${PANEL_DB_NAME}
       - MYSQL_USER=${PANEL_DB_USER}
       - MYSQL_PASSWORD=${PANEL_DB_USER_PASSWORD}
-      #- MYSQL_ROOT_PASSWORD=root_pwd
     ports:
       - ${PANEL_APP_PORT_HTTP}:8080
     image: zabbix/zabbix-web-nginx-mysql:alpine-6.4.4

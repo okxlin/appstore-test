@@ -15,10 +15,6 @@ additionalProperties:
               key: mysql
               type: param
               value: "3306"
-            #- envKey: ZABBIX_DB_PORT
-            #  key: postgresql
-            #  type: param
-            #  value: "5432"
           required: true
           type: apps
           values:
