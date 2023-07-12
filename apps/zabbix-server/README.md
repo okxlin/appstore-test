@@ -1,13 +1,22 @@
 # 使用说明
 
-默认账户与密码
+- 默认账户与密码(注意大小写)
 
 ```
-username:admin
+username:Admin
 password:zabbix
 ```
 
-**注意：Zabbix-MySQL版本的，Zabbix 6.X的需求环境MySQL8**
+## 注意事项
+
+**注意：这是Zabbix-MySQL版本的，Zabbix 6.X的需求环境MySQL8**
+
+商店自带的`MySQL 8`的数据库格式设置与`Zabbix`需求有所不同，`zabbix-server-mysql`容器会提示存在错误。
+
+但是实际能够运行。如有错误，期待反馈。
+
+- 带`&mysql`版本，会安装符合`Zabbix`格式要求的数据库版本
+- 不带`&mysql`的版本，默认调用面板安装的数据库
 
 
 # 原始相关
