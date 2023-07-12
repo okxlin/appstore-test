@@ -1,3 +1,17 @@
+# 使用说明
+
+默认账户与密码
+
+```
+username:admin
+password:zabbix
+```
+
+**注意：Zabbix-MySQL版本的，Zabbix 6.X的需求环境MySQL8**
+
+
+# 原始相关
+
 Zabbix is free software, released under the GNU General Public License
 (GPL) version 2.
 

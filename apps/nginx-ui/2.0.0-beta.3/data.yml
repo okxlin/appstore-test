@@ -3,8 +3,8 @@ additionalProperties:
         - default: 31080
           edit: true
           envKey: PANEL_APP_PORT_HTTP
-          labelEn: HTTP Port
-          labelZh: HTTP端口
+          labelEn: Console Port
+          labelZh: 控制台端口
           required: true
           rule: paramPort
           type: number

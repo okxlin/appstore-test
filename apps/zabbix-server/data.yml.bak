@@ -13,7 +13,7 @@ additionalProperties:
     shortDescEn: Real-time monitoring of IT components and services (Server)
     type: tool
     crossVersionUpdate: true
-    limit: 0
+    limit: 1
     recommend: 0
     website: https://www.zabbix.com/
     github: https://github.com/zabbix/zabbix

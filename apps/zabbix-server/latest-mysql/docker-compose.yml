@@ -6,15 +6,16 @@ services:
     networks:
       - 1panel-network
     ports:
-      - "${PANEL_APP_PORT_HTTP}:10051"
+      - "${PANEL_APP_PORT_HTTP2}:10051"
     environment:
       - DB_SERVER_HOST=${PANEL_DB_HOST}
+      - DB_SERVER_PORT=${ZABBIX_DB_PORT}
       - MYSQL_DATABASE=${PANEL_DB_NAME}
       - MYSQL_USER=${PANEL_DB_USER}
       - MYSQL_PASSWORD=${PANEL_DB_USER_PASSWORD}
       #- MYSQL_ROOT_PASSWORD=root_pwd
       - ZBX_JAVAGATEWAY=zabbix-java-gateway
-    image: zabbix/zabbix-server-mysql:alpine-6.4.4
+    image: zabbix/zabbix-server-mysql:alpine-latest
     depends_on:
       - zabbix-java-gateway
     labels:
@@ -25,7 +26,7 @@ services:
     restart: always
     networks:
       - 1panel-network
-    image: zabbix/zabbix-java-gateway:alpine-6.4.4
+    image: zabbix/zabbix-java-gateway:alpine-latest
     labels:
       createdBy: Apps
 
@@ -42,8 +43,8 @@ services:
       - MYSQL_PASSWORD=${PANEL_DB_USER_PASSWORD}
       #- MYSQL_ROOT_PASSWORD=root_pwd
     ports:
-      - ${PANEL_APP_PORT_HTTP2}:8080
-    image: zabbix/zabbix-web-nginx-mysql:alpine-6.4.4
+      - ${PANEL_APP_PORT_HTTP}:8080
+    image: zabbix/zabbix-web-nginx-mysql:alpine-latest
     depends_on:
       - zabbix-server-mysql
     labels:
