@@ -9,10 +9,13 @@ services:
       - "${PANEL_APP_PORT_HTTP}:80"
       - "${PANEL_APP_PORT_HTTPS}:443"
     volumes:
-      - "${DATA_PATH}:/var/www/html"
+      - discuz_data:/var/www/html
     image: tencentci/discuz:v3.4
     labels:  
       createdBy: "Apps"
+
+volumes:
+  discuz_data:
 
 networks:  
   1panel-network:  
