@@ -13,7 +13,7 @@ additionalProperties:
     shortDescEn: Automatically obtain your public IPv4 or IPv6 address and resolve it to the corresponding domain name service
     type: tool
     crossVersionUpdate: true
-    limit: 0
+    limit: 1
     recommend: 0
     website: https://github.com/jeessy2/ddns-go
     github: https://github.com/jeessy2/ddns-go

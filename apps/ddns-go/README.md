@@ -1,17 +1,67 @@
+# 使用说明
+
+默认以`--net=host`网络模式运行，方便获取`IPV6`地址，默认管理界面端口`9876`
+
+如果因为端口冲突，需要以桥接网络模式运行，不需要获取`IPV6`，请将原始`docker-compose.yml`做修改，
+
+> 已经保留了面板设置桥接模式端口的设置，有需要的直接粘贴覆盖原`docker-compose.yml`文件里的内容，重建应用即可。
+
+- `--net=host`网络模式设置
+```
+    network_mode: "host"
+```
+
+- 桥接网络模式
+```
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:9876"
+```
+
+
+完整桥接网络模式配置如下
+```
+version: "3"
+services:
+  ddns-go:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:9876"
+    volumes:
+      - "${DATA_PATH}:/root"
+    image: jeessy/ddns-go:v5.3.7
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true
+```
+
+
+# 原始相关
+
 # ddns-go
 
 [![GitHub release](https://img.shields.io/github/release/jeessy2/ddns-go.svg?logo=github&style=flat-square) ![GitHub release downloads](https://img.shields.io/github/downloads/jeessy2/ddns-go/total?logo=github)](https://github.com/jeessy2/ddns-go/releases/latest) [![Go version](https://img.shields.io/github/go-mod/go-version/jeessy2/ddns-go)](https://github.com/jeessy2/ddns-go/blob/master/go.mod) [![](https://goreportcard.com/badge/github.com/jeessy2/ddns-go/v5)](https://goreportcard.com/report/github.com/jeessy2/ddns-go/v5) [![](https://img.shields.io/docker/image-size/jeessy/ddns-go)](https://registry.hub.docker.com/r/jeessy/ddns-go) [![](https://img.shields.io/docker/pulls/jeessy/ddns-go)](https://registry.hub.docker.com/r/jeessy/ddns-go)
 
 自动获得你的公网 IPv4 或 IPv6 地址，并解析到对应的域名服务。
 
-- [特性](#特性)
-- [系统中使用](#系统中使用)
-- [Docker中使用](#docker中使用)
-- [使用IPv6](#使用ipv6)
-- [Webhook](#webhook)
-- [Callback](#callback)
-- [界面](#界面)
-- [开发&自行编译](#开发自行编译)
+- [使用说明](#使用说明)
+- [原始相关](#原始相关)
+- [ddns-go](#ddns-go)
+  - [特性](#特性)
+  - [系统中使用](#系统中使用)
+  - [Docker中使用](#docker中使用)
+  - [使用IPv6](#使用ipv6)
+  - [Webhook](#webhook)
+  - [Callback](#callback)
+  - [界面](#界面)
+  - [开发\&自行编译](#开发自行编译)
 
 ## 特性
 
