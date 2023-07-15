@@ -16,14 +16,6 @@ additionalProperties:
           required: true
           rule: paramPort
           type: number
-        - default: v2raya
-          envKey: PASSWORD
-          labelEn: Password
-          labelZh: 密码
-          random: true
-          required: true
-          rule: paramComplexity
-          type: password
         - default: ./data
           edit: true
           envKey: DATA_PATH
