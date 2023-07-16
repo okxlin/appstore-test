@@ -1,0 +1,19 @@
+version: '3'
+services:
+  reader:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8080"
+    volumes:
+      - "${DATA_PATH}/log:/log"
+      - "${DATA_PATH}/storage:/storage"
+    image: hectorqin/reader:3.2.0
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true
