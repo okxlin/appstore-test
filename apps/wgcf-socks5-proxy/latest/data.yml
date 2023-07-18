@@ -22,3 +22,33 @@ additionalProperties:
           labelZh: 仅IPV4/IPV6(填"-4";"-6")
           required: false
           type: text
+        - default: ""
+          edit: true
+          envKey: SOCKS_USER
+          labelEn: Socks user
+          labelZh: Socks用户名
+          required: false
+          type: text
+        - default: ""
+          edit: true
+          envKey: SOCKS_PWD
+          labelEn: Socks password
+          labelZh: Socks密码
+          random: false
+          required: false
+          rule: paramComplexity
+          type: password
+        - default: "1080"
+          edit: true
+          envKey: SOCKS_PORT
+          labelEn: Internal Socks port
+          labelZh: 内部Socks端口
+          required: true
+          type: text
+        - default: "0.0.0.0"
+          edit: true
+          envKey: SOCKS_HOST
+          labelEn: Internal Socks host
+          labelZh: 内部Socks主机
+          required: true
+          type: text

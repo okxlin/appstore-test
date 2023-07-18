@@ -6,10 +6,15 @@ services:
     networks:
       - 1panel-network
     ports:
-      - "${PANEL_APP_PORT_HTTP}:1080"
+      - "${PANEL_APP_PORT_HTTP}:${SOCKS_PORT}"
     volumes:
       - "${DATA_PATH}:/wgcf"
       - /lib/modules:/lib/modules
+    environment:
+      - USER=${SOCKS_USER}
+      - PASSWORD=${SOCKS_PWD}
+      - PORT=${SOCKS_PORT}
+      - HOST=${SOCKS_HOST}
     privileged: true
     cap_add:
       - net_admin
