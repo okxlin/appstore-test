@@ -30,3 +30,10 @@ additionalProperties:
           labelZh: 启用SSH(true/false)
           required: true
           type: text
+        - default: ./ssh/id_rsa
+          edit: true
+          envKey: SSH_KEY_PATH
+          labelEn: SSH key file(/root/.ssh/id_rsa)
+          labelZh: SSH 私钥文件(/root/.ssh/id_rsa)
+          required: true
+          type: text

@@ -21,7 +21,8 @@ services:
       - "${SSH_PORT}:8089"
     volumes:
       - "${DATA_PATH}:/usr/local/next-terminal/data"
-      - /etc/localtime:/etc/localtime
+      - "/etc/localtime:/etc/localtime"
+      - "${SSH_KEY_PATH}:/root/.ssh/id_rsa"
     environment:
       DB: sqlite
       GUACD_HOSTNAME: nt-guacd
