@@ -26,7 +26,7 @@ services:
       ALI_SMS_ENABLE: ${ALI_SMS_PERMIT}
       ALI_SMS_SIGN_NAME: ${ALI_SMS_SIGN}
       ALI_SMS_TEMPLATE_CODE: ${ALI_SMS_TEMPLATE}
-    image: jarvis2f/ais-ninja:v1.0.5
+    image: jarvis2f/ais-ninja:v1.0.6
     labels:  
       createdBy: "Apps"
 
