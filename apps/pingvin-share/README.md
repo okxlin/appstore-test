@@ -2,157 +2,125 @@
 
 ---
 
-_Read this in another language: [Spanish](https://github.com/stonith404/pingvin-share/blob/main/docs/README.es.md), [English](https://github.com/stonith404/pingvin-share/blob/main/README.md), [Simplified Chinese](https://github.com/stonith404/pingvin-share/blob/main/docs/README.zh-cn.md)_
+_选择合适的语言阅读: [西班牙语](https://github.com/stonith404/pingvin-share/blob/main/docs/README.es.md), [英语](https://github.com/stonith404/pingvin-share/blob/main/README.md), [简体中文](https://github.com/stonith404/pingvin-share/blob/main/docs/README.zh-cn.md)_
 
 ---
 
-Pingvin Share is self-hosted file sharing platform and an alternative for WeTransfer.
+Pingvin Share 是一个可自建的文件分享平台，是 WeTransfer 的一个替代品
 
-## ✨ Features
+## ✨ 特性
 
-- Share files using a link
-- Unlimited file size (restricted only by disk space)
-- Set an expiration date for shares
-- Secure shares with visitor limits and passwords
-- Email recipients
-- Integration with ClamAV for security scans
+- 通过可自定义后缀的链接分享文件
+- 可自定义任意大小的文件上传限制 (受制于托管所在的硬盘大小)
+- 对共享链接设置有效期限
+- 对共享链接设置访问次数和访问密码
+- 通过邮件自动发送共享链接
+- 整合 ClamAV 进行反病毒检查
 
-## 🐧 Get to know Pingvin Share
+## 🐧 了解一下 Pingvin Share
 
-- [Demo](https://pingvin-share.dev.eliasschneider.com)
-- [Review by DB Tech](https://www.youtube.com/watch?v=rWwNeZCOPJA)
+- [示例网站](https://pingvin-share.dev.eliasschneider.com)
+- [DB Tech 推荐视频](https://www.youtube.com/watch?v=rWwNeZCOPJA)
 
 <img src="https://user-images.githubusercontent.com/58886915/225038319-b2ef742c-3a74-4eb6-9689-4207a36842a4.png" width="700"/>
 
-## ⌨️ Setup
+## ⌨️ 自建指南
 
-> Note: Pingvin Share is in its early stages and may contain bugs.
+> 注意：Pingvin Share 仍处于开发阶段并且可能存在 bugs
 
-### Installation with Docker (recommended)
+### Docker 部署 (推荐)
 
-1. Download the `docker-compose.yml` file
-2. Run `docker-compose up -d`
+1. 下载 `docker-compose.yml`
+2. 运行命令 `docker-compose up -d`
 
-The website is now listening on `http://localhost:3000`, have fun with Pingvin Share 🐧!
+现在网站运行在 `http://localhost:3000`，尝试一下你本地的 Pingvin Share 🐧!
 
-### Stand-alone Installation
+### Stand-alone 部署
 
-Required tools:
+必须的依赖:
 
 - [Node.js](https://nodejs.org/en/download/) >= 16
 - [Git](https://git-scm.com/downloads)
-- [pm2](https://pm2.keymetrics.io/) for running Pingvin Share in the background
+- [pm2](https://pm2.keymetrics.io/) 用于后台运行 Pingvin Share
 
 ```bash
 git clone https://github.com/stonith404/pingvin-share
 cd pingvin-share
 
-# Checkout the latest version
+# 获取最新的版本
 git fetch --tags && git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
 
-# Start the backend
+# 启动后端 backend
 cd backend
 npm install
 npm run build
 pm2 start --name="pingvin-share-backend" npm -- run prod
 
-# Start the frontend
+# 启动前端 frontend
 cd ../frontend
 npm install
 npm run build
 pm2 start --name="pingvin-share-frontend" npm -- run start
 ```
 
-The website is now listening on `http://localhost:3000`, have fun with Pingvin Share 🐧!
+现在网站运行在 `http://localhost:3000`，尝试一下你本地的 Pingvin Share 🐧!
 
-### Integrations
+### 整合组件
 
-#### ClamAV (Docker only)
+#### ClamAV (仅限 Docker 部署)
 
-ClamAV is used to scan shares for malicious files and remove them if found.
+扫描上传文件中是否存在可疑文件，如果存在 ClamAV 会自动移除
 
-1. Add the ClamAV container to the Docker Compose stack (see `docker-compose.yml`) and start the container.
-2. Docker will wait for ClamAV to start before starting Pingvin Share. This may take a minute or two.
-3. The Pingvin Share logs should now log "ClamAV is active"
+1. 在 docker-compose 配置中添加 ClamAV 容器 (见 `docker-compose.yml` 注释部分) 并启动容器
+2. Docker 会在启动 Pingvin Share 前启动 ClamAV，也许会花费 1-2 分钟
+3. Pingvin Share 日志中应该有 "ClamAV is active"
 
-Please note that ClamAV needs a lot of [ressources](https://docs.clamav.net/manual/Installing/Docker.html#memory-ram-requirements).
+请注意 ClamAV 会消耗很多 [系统资源(特别是内存)](https://docs.clamav.net/manual/Installing/Docker.html#memory-ram-requirements)
 
-### Additional resources
+### 更多资源
 
-- [Synology NAS installation](https://mariushosting.com/how-to-install-pingvin-share-on-your-synology-nas/)
+- [群晖 NAS 配置](https://mariushosting.com/how-to-install-pingvin-share-on-your-synology-nas/)
 
-### Upgrade to a new version
+### 升级
 
-As Pingvin Share is in early stage, see the release notes for breaking changes before upgrading.
+因为 Pingvin Share 仍处在开发阶段，在升级前请务必阅读 release notes 避免不可逆的改变
 
-#### Docker
+#### Docker 升级
 
 ```bash
 docker compose pull
 docker compose up -d
 ```
 
-#### Stand-alone
+#### Stand-alone 升级
 
-1. Stop the running app
+1. 停止正在运行的 app
    ```bash
    pm2 stop pingvin-share-backend pingvin-share-frontend
    ```
-2. Repeat the steps from the [installation guide](#stand-alone-installation) except the `git clone` step.
+2. 重复 [installation guide](#stand-alone-installation) 中的步骤，除了 `git clone` 这一步
 
    ```bash
    cd pingvin-share
 
-   # Checkout the latest version
+   # 获取最新的版本
    git fetch --tags && git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
 
-   # Start the backend
+   # 启动后端 backend
    cd backend
    npm run build
    pm2 restart pingvin-share-backend
 
-   # Start the frontend
+   # 启动前端 frontend
    cd ../frontend
    npm run build
    pm2 restart pingvin-share-frontend
    ```
 
-### Configuration
+### 自定义品牌
 
-You can customize Pingvin Share by going to the configuration page in your admin dashboard.
+你可以在管理员配置页面改变网站的名字和 logo
 
-#### Environment variables
+## 🖤 提交贡献
 
-For installation specific configuration, you can use environment variables. The following variables are available:
-
-##### Backend
-
-| Variable         | Default Value                                      | Description                            |
-| ---------------- | -------------------------------------------------- | -------------------------------------- |
-| `PORT`           | `8080`                                             | The port on which the backend listens. |
-| `DATABASE_URL`   | `file:../data/pingvin-share.db?connection_limit=1` | The URL of the SQLite database.        |
-| `DATA_DIRECTORY` | `./data`                                           | The directory where data is stored.    |
-| `CLAMAV_HOST`    | `127.0.0.1`                                        | The IP address of the ClamAV server.   |
-| `CLAMAV_PORT`    | `3310`                                             | The port number of the ClamAV server.  |
-
-##### Frontend
-
-| Variable  | Default Value           | Description                              |
-| --------- | ----------------------- | ---------------------------------------- |
-| `PORT`    | `3000`                  | The port on which the frontend listens.  |
-| `API_URL` | `http://localhost:8080` | The URL of the backend for the frontend. |
-
-## 🖤 Contribute
-
-### Translations
-
-You can help to translate Pingvin Share into your language.
-On [Crowdin](https://crowdin.com/project/pingvin-share) you can easily translate Pingvin Share online.
-
-Is your language not on Crowdin? Feel free to [Request it](https://github.com/stonith404/pingvin-share/issues/new?assignees=&labels=language-request&projects=&template=language-request.yml&title=%F0%9F%8C%90+Language+request%3A+%3Clanguage+name+in+english%3E).
-
-Any issues while translating? Feel free to participate in the [Localization discussion](https://github.com/stonith404/pingvin-share/discussions/198).
-
-### Project
-
-You're very welcome to contribute to Pingvin Share! Please follow the [contribution guide](https://github.com/stonith404/pingvin-share/blob/main/CONTRIBUTING.md) to get started.
+非常欢迎向 Pingvin Share 提交贡献! 请阅读 [contribution guide](https://github.com/stonith404/pingvin-share/blob/main/CONTRIBUTING.md) 来提交你的贡献
