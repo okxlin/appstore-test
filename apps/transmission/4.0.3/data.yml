@@ -16,7 +16,7 @@ additionalProperties:
           required: true
           rule: paramPort
           type: number
-        - default: ./data/Watch
+        - default: ./data/watch
           edit: true
           envKey: WATCH_PATH
           labelEn: Watch folder for torrent files
