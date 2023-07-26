@@ -1,4 +1,4 @@
-name: wireguard-ui
+name: WireGuard-UI
 tags:
     - 工具
 title: Wireguard网络界面
@@ -6,7 +6,7 @@ type: 工具
 description: Wireguard网络界面
 additionalProperties:
     key: wireguard-ui
-    name: wireguard-ui
+    name: WireGuard-UI
     tags:
         - Tool
     shortDescZh: Wireguard网络界面
