@@ -1,0 +1,20 @@
+name: 中文 DOS 游戏
+tags:
+    - 工具
+title: 中文 DOS 游戏合集
+type: 工具
+description: 中文 DOS 游戏合集
+additionalProperties:
+    key: dosgame
+    name: 中文 DOS 游戏
+    tags:
+        - Tool
+    shortDescZh: 中文 DOS 游戏合集
+    shortDescEn: Chinese DOS games collections
+    type: tool
+    crossVersionUpdate: false
+    limit: 0
+    recommend: 0
+    website: https://dos.lol/
+    github: https://github.com/rwv/chinese-dos-games
+    document: https://github.com/rwv/chinese-dos-games
