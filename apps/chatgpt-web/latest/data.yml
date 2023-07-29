@@ -11,8 +11,8 @@ additionalProperties:
         - default: ''
           edit: true
           envKey: ACCESS_TOKEN
-          labelEn: OPENAI ACCESS TOKEN (fill in at least one with OPENAI API KEY)
-          labelZh: OPENAI ACCESS TOKEN(与OPENAI API KEY至少填一个)
+          labelEn: OPENAI ACCESS TOKEN (fill in at least one with OPENAI API KEY)(https://chat.openai.com/api/auth/session)
+          labelZh: OPENAI ACCESS TOKEN(与OPENAI API KEY至少填一个)(https://chat.openai.com/api/auth/session)
           required: false
           type: text
         - default: https://bypass.duti.tech/api/conversation

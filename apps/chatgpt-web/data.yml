@@ -1,4 +1,4 @@
-name: chatgpt-web
+name: ChatGPT Web
 tags:
     - 工具
 title: 使用express和vue3搭建的支持ChatGPT双模型演示网页
@@ -6,7 +6,7 @@ type: 工具
 description: 使用express和vue3搭建的支持ChatGPT双模型演示网页
 additionalProperties:
     key: chatgpt-web
-    name: chatgpt-web
+    name: ChatGPT Web
     tags:
         - Tool
     shortDescZh: 使用express和vue3搭建的支持ChatGPT双模型演示网页
