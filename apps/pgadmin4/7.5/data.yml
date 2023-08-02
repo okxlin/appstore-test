@@ -21,6 +21,6 @@ additionalProperties:
           labelEn: Admin Password
           labelZh: 管理员密码
           random: false
-          required: false
+          required: true
           rule: paramComplexity
           type: password
