@@ -25,7 +25,7 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.234
-    image: chaitin/safeline-mgt-api:2.4.0
+    image: chaitin/safeline-mgt-api:2.5.0
     volumes:
     - ${SAFELINE_DIR}/resources/management:/resources/management
     - ${SAFELINE_DIR}/resources/nginx:/resources/nginx
@@ -71,7 +71,7 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.236
-    image: chaitin/safeline-mario:2.4.0
+    image: chaitin/safeline-mario:2.5.0
     volumes:
     - ${SAFELINE_DIR}/resources/mario:/resources/mario
     - ${SAFELINE_DIR}/logs/mario:/logs/mario
@@ -89,7 +89,7 @@ services:
   safeline-tengine:
     container_name: ${CONTAINER_NAME}-tengine
     restart: always
-    image: chaitin/safeline-tengine:2.4.0
+    image: chaitin/safeline-tengine:2.5.0
     volumes:
     - ${SAFELINE_DIR}/resources/nginx:/etc/nginx
     - ${SAFELINE_DIR}/resources/management:/resources/management
