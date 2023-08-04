@@ -13,7 +13,7 @@ additionalProperties:
     shortDescEn: Nginx Web page configuration tool
     type: tool
     crossVersionUpdate: true
-    limit: 0
+    limit: 1
     recommend: 0
     website: https://www.nginxwebui.cn
     github: https://github.com/cym1102/nginxWebUI
