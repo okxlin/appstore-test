@@ -8,3 +8,10 @@ additionalProperties:
           required: true
           rule: paramPort
           type: number
+        - default: /mnt
+          edit: true
+          envKey: DATA_PATH
+          labelEn: The drive for which you need to view statistics
+          labelZh: 需要查看统计信息的驱动器
+          required: true
+          type: text
