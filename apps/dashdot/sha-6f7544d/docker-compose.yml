@@ -8,7 +8,9 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:3001"
     volumes:
-      - "${DATA_PATH}:/mnt/host:ro"
+      - "/etc/os-release:/etc/os-release:ro"
+      - "/proc/1/ns/net:/mnt/host_ns_net:ro"
+      - "/:/mnt/host:ro"
     privileged: true
     tty: true
     image: mauricenino/dashdot:sha-6f7544d
