@@ -55,8 +55,8 @@ additionalProperties:
         - default: ./data/photos
           edit: true
           envKey: DATA_PATH
-          labelEn: Photos folder path
-          labelZh: 照片文件夹路径
+          labelEn: Photos folder path (Inside the container "/photos")
+          labelZh: 照片文件夹路径(容器内部"/photos")
           required: true
           type: text
         - default: ./data/cache

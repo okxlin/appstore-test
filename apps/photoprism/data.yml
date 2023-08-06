@@ -1,0 +1,20 @@
+name: PhotoPrism
+tags:
+    - 工具
+title: 去中心化网络的人工智能照片应用程序
+type: 工具
+description: 去中心化网络的人工智能照片应用程序
+additionalProperties:
+    key: photoprism
+    name: PhotoPrism
+    tags:
+        - Tool
+    shortDescZh: 去中心化网络的人工智能照片应用程序
+    shortDescEn: AI-Powered Photos App for the Decentralized Web
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://www.photoprism.app
+    github: https://github.com/photoprism/photoprism
+    document: https://docs.photoprism.app
