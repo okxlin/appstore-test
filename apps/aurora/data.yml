@@ -1,4 +1,4 @@
-name: Aurora
+name: 极光面板 Aurora
 tags:
     - 工具
 title: 一个多服务器端口租用管理面板
@@ -6,7 +6,7 @@ type: 工具
 description: 一个多服务器端口租用管理面板
 additionalProperties:
     key: aurora
-    name: Aurora
+    name: 极光面板 Aurora
     tags:
         - Tool
     shortDescZh: 一个多服务器端口租用管理面板
