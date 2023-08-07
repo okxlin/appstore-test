@@ -8,8 +8,8 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:1991"
     volumes:
-      - "${DATA_PATH}/files:/files"
-      - "${DATA_PATH}/logs:/logs"
+      - "${DATA_PATH}/files:/surveyking/files"
+      - "${DATA_PATH}/logs:/surveyking/logs"
     image: surveyking/surveyking:latest
     labels:  
       createdBy: "Apps"
