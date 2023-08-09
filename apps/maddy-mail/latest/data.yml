@@ -1,7 +1,6 @@
 additionalProperties:
     formFields:
         - default: 25
-          edit: false
           disabled: true
           envKey: SMTP_IN_PORT
           labelEn: SMTP inbound port
@@ -10,7 +9,6 @@ additionalProperties:
           rule: paramPort
           type: number
         - default: 143
-          edit: false
           disabled: true
           envKey: IMAP4_PORT
           labelEn: IMAP4 port
@@ -19,7 +17,6 @@ additionalProperties:
           rule: paramPort
           type: number
         - default: 993
-          edit: false
           disabled: true
           envKey: IMAP4_PORT2
           labelEn: IMAP4 port
@@ -28,7 +25,6 @@ additionalProperties:
           rule: paramPort
           type: number
         - default: 465
-          edit: false
           disabled: true
           envKey: SMTP_S_PORT
           labelEn: SMTP Submission ports
@@ -37,7 +33,6 @@ additionalProperties:
           rule: paramPort
           type: number
         - default: 587
-          edit: false
           disabled: true
           envKey: SMTP_S_PORT2
           labelEn: SMTP Submission ports

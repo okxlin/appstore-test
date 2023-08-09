@@ -10,7 +10,7 @@ services:
       - "${WEB_CLIENT_PORT1}:21118" #网页客户端支持端口
     command: hbbs -r ${HOST_ADDRESS}:${HBBS_PORT} -k _ # 填入个人域名或 IP +  暴露端口
     volumes:
-      - "./data/hbbs:/root" # 自定义挂载目录
+      - "./data:/root" # 自定义挂载目录
     networks:
       - 1panel-network
     depends_on:
@@ -32,7 +32,7 @@ services:
       - "${WEB_CLIENT_PORT2}:21119" #网页客户端支持端口
     command: hbbr -k _
     volumes:
-      - "./data/hbbr:/root" # 自定义挂载目录
+      - "./data:/root" # 自定义挂载目录
     networks:
       - 1panel-network
 #    deploy:
