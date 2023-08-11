@@ -9,6 +9,6 @@ services:
     environment:
       - "BOOT_OPTIONS=--server.port=${PANEL_APP_PORT_CONSOLE}"
     privileged: true
-    image: cym1102/nginxwebui:3.6.9
+    image: cym1102/nginxwebui:3.7.0
     labels:  
       createdBy: "Apps"
