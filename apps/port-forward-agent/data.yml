@@ -13,7 +13,7 @@ additionalProperties:
     shortDescEn: Port forwarding tool developed in Go (Agent)
     type: tool
     crossVersionUpdate: true
-    limit: 0
+    limit: 1
     recommend: 0
     website: https://gitee.com/tavenli/port-forward
     github: https://gitee.com/tavenli/port-forward
