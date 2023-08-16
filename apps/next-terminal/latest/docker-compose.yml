@@ -18,7 +18,7 @@ services:
       - 1panel-network
     ports:
       - "${PANEL_APP_PORT_HTTP}:8088"
-      - "${SSH_PORT}:8089"
+      - "${PANEL_APP_PORT_SSH}:8089"
     volumes:
       - "${DATA_PATH}:/usr/local/next-terminal/data"
       - "/etc/localtime:/etc/localtime"

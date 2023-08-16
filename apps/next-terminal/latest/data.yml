@@ -10,7 +10,7 @@ additionalProperties:
           type: number
         - default: 40059
           edit: true
-          envKey: SSH_PORT
+          envKey: PANEL_APP_PORT_SSH
           labelEn: SSH Port
           labelZh: SSH端口
           required: false

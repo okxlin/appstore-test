@@ -8,7 +8,7 @@ additionalProperties:
           required: true
           rule: paramPort
           type: number
-        - default: ./data
+        - default: ./data/data
           edit: true
           envKey: DATA_PATH
           labelEn: Data folder path
