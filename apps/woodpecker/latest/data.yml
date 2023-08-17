@@ -1,0 +1,59 @@
+additionalProperties:
+    formFields:
+        - default: 40122
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: HTTP Port
+          labelZh: HTTP端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: ./data
+          edit: true
+          envKey: DATA_PATH
+          labelEn: Data folder path
+          labelZh: 数据文件夹路径
+          required: true
+          type: text
+        - default: "false"
+          edit: true
+          envKey: REGISTER_SWITCH
+          labelEn: Enable register (true or false)
+          labelZh: 启用注册(true/false)
+          required: true
+          type: text
+        - default: http://ci.example.com
+          edit: true
+          envKey: WOODPECKER_HOST
+          labelEn: External URL
+          labelZh: 外部访问地址
+          required: true
+          type: text
+        - default: https://github.com
+          edit: true
+          envKey: WOODPECKER_GITHUB_URL
+          labelEn: Github URL
+          labelZh: Github地址
+          required: true
+          type: text
+        - default: ''
+          edit: true
+          envKey: WOODPECKER_GITHUB_CLIENT
+          labelEn: CLIENT Vaule
+          labelZh: CLIENT 值
+          required: true
+          type: text
+        - default: ''
+          edit: true
+          envKey: WOODPECKER_GITHUB_SECRET
+          labelEn: SECRET Vaule
+          labelZh: SECRET 值
+          required: true
+          type: text
+        - default: ''
+          edit: true
+          envKey: WOODPECKER_AGENT_SECRET
+          labelEn: Agent Secret Vaule
+          labelZh: Agent Secret 值
+          required: true
+          type: text
