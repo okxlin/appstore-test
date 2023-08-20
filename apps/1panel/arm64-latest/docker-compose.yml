@@ -1,0 +1,14 @@
+version: '3'
+services:
+  1panel:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    network_mode: "host"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${DATA_PATH}:/opt
+    environment:
+      - TZ=${TIME_ZONE}
+    image: moelin/1panel:latest-arm64
+    labels:  
+      createdBy: "Apps"
