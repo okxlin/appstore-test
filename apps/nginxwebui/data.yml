@@ -1,17 +1,17 @@
 name: nginxWebUI
 tags:
-    - 工具
+    - Web 服务器
 title: Nginx网页管理工具
-type: 工具
+type: Web 服务器
 description: Nginx网页管理工具
 additionalProperties:
     key: nginxwebui
     name: nginxWebUI
     tags:
-        - Tool
+        - Server
     shortDescZh: Nginx网页管理工具
     shortDescEn: Nginx Web page configuration tool
-    type: tool
+    type: runtime
     crossVersionUpdate: true
     limit: 1
     recommend: 0

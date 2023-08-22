@@ -1,4 +1,4 @@
-name: 雷池 safeline
+name: 雷池WEB应用防火墙(Safeline WAF)
 tags:
     - 工具
 title: 一款足够简单、足够好用、足够强的免费 WAF
@@ -6,7 +6,7 @@ type: 工具
 description: 一款足够简单、足够好用、足够强的免费 WAF
 additionalProperties:
     key: safeline
-    name: 雷池 safeline
+    name: 雷池WEB应用防火墙(Safeline WAF)
     tags:
         - Tool
     shortDescZh: 一款足够简单、足够好用、足够强的免费 WAF
