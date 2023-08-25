@@ -10,7 +10,7 @@ additionalProperties:
           type: number
         - default: 40029
           edit: true
-          envKey: API_PORT
+          envKey: PANEL_APP_PORT_API
           labelEn: API port
           labelZh: API端口
           required: true

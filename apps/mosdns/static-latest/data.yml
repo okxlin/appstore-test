@@ -23,4 +23,10 @@ additionalProperties:
           labelZh: 数据文件夹路径
           required: true
           type: text
-
+        - default: 240
+          edit: true
+          envKey: SUBNET_SUFFIX
+          labelEn: Subnet suffix (172.18.0.x)
+          labelZh: 子网后缀 (172.18.0.x)
+          required: true
+          type: text
