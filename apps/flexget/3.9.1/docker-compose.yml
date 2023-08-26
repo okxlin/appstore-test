@@ -15,7 +15,7 @@ services:
       - PGID=1000
       - TZ=${TIME_ZONE}
       - FG_WEBUI_PASSWD=${WEB_PASSWORD}
-    image: wiserain/flexget:3.9.1
+    image: wiserain/flexget:3.9.4
     labels:  
       createdBy: "Apps"
 
