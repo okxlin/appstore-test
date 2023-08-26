@@ -73,7 +73,7 @@ services:
       1panel-network:
       safeline-ce:
         ipv4_address: ${SUBNET_PREFIX}.6
-    image: chaitin/safeline-mario:3.0.1
+    image: chaitin/safeline-mario:3.1.0
     volumes:
     - ${SAFELINE_DIR}/resources/mario:/resources/mario
     - ${SAFELINE_DIR}/logs/mario:/logs/mario
