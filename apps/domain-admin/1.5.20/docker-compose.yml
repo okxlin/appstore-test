@@ -10,7 +10,7 @@ services:
     volumes:
       - "${DATA_PATH}/database:/app/database"
       - "${DATA_PATH}/logs:/app/logs"
-    image: mouday/domain-admin:v1.5.19
+    image: mouday/domain-admin:v1.5.20
     labels:  
       createdBy: "Apps"
 
