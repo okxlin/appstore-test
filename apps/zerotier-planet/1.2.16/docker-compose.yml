@@ -18,7 +18,7 @@ services:
       - HTTP_PORT=4000
       - HTTP_ALL_INTERFACES=yes
       - ZTNCUI_PASSWD=${PASSWORD}
-    image: keynetworks/ztncui:1.2.15
+    image: keynetworks/ztncui:1.2.16
     labels:  
       createdBy: "Apps"
 
