@@ -10,7 +10,7 @@ services:
     volumes:
       - "${DATA_PATH}:/app/media:z"
     command: /start
-    image: registry.cn-hangzhou.aliyuncs.com/charles0519/music_tag_web:1.2.3
+    image: registry.cn-hangzhou.aliyuncs.com/charles0519/music_tag_web:1.2.4
     labels:  
       createdBy: "Apps"
 
