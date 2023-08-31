@@ -1,0 +1,25 @@
+version: '3'
+services:
+  qbittorrent-vnc:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTPS}:6901"
+      - "${PANEL_APP_PORT_PEER}:${PANEL_APP_PORT_PEER}"
+      - "${PANEL_APP_PORT_PEER}:${PANEL_APP_PORT_PEER}/udp"
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+    volumes:
+      - "${DOWNLOAD_PATH}:/home/kasm-user/Downloads"
+    environment:
+      - VNC_PW=${HTTP_PWD}
+    shm_size: ${MEM_USE}
+    tty: true
+    image: kasmweb/qbittorrent:develop
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true
