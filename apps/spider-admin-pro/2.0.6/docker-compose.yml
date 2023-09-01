@@ -7,7 +7,7 @@ services:
       - 1panel-network
     ports:
       - "${PANEL_APP_PORT_HTTP}:8000"
-    image: mouday/spider-admin-pro:v2.0.6
+    image: mouday/spider-admin-pro:v2.0.7
     labels:  
       createdBy: "Apps"
 
