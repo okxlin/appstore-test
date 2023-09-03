@@ -9,7 +9,7 @@ additionalProperties:
     name: ais-ninja
     tags:
         - Tool
-    shortDescZh: 基于 chatgpt 的 Web 应用程序
+    shortDescZh: 基于 ChatGPT 的 Web 应用程序
     shortDescEn: ChatGPT-based web applications
     type: tool
     crossVersionUpdate: true

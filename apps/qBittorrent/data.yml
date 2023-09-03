@@ -1,15 +1,15 @@
 name: qBittorrent
 tags:
     - 工具
-title: qBittorrent是一个跨平台的开源BitTorrent客户端
+title: qBittorrent 是一个跨平台的开源 BitTorrent 客户端
 type: 工具
-description: qBittorrent是一个跨平台的开源BitTorrent客户端
+description: qBittorrent 是一个跨平台的开源 BitTorrent 客户端
 additionalProperties:
     key: qBittorrent
     name: qBittorrent
     tags:
         - Tool
-    shortDescZh: qBittorrent是一个跨平台的开源BitTorrent客户端
+    shortDescZh: qBittorrent 是一个跨平台的开源 BitTorrent 客户端
     shortDescEn: qBittorrent is a cross-platform open source BitTorrent client
     type: tool
     crossVersionUpdate: true

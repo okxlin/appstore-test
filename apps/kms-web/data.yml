@@ -1,15 +1,15 @@
 name: KMS & WEB
 tags:
     - 工具
-title: KMS服务端与WEB
+title: KMS 服务端与 WEB
 type: 工具
-description: KMS服务端与WEB
+description: KMS 服务端与 WEB
 additionalProperties:
     key: kms-web
     name: KMS & WEB
     tags:
         - Tool
-    shortDescZh: KMS服务端与WEB
+    shortDescZh: KMS 服务端与 WEB
     shortDescEn: KMS server and WEB
     type: tool
     crossVersionUpdate: true

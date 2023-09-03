@@ -1,4 +1,4 @@
-name: alist
+name: Alist
 tags:
     - 工具
 title: 一个支持多存储的文件列表程序
@@ -6,7 +6,7 @@ type: 工具
 description: 一个支持多存储的文件列表程序
 additionalProperties:
     key: alist
-    name: alist
+    name: Alist
     tags:
         - Tool
     shortDescZh: 一个支持多存储的文件列表程序
