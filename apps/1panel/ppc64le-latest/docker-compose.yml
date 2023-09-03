@@ -9,6 +9,6 @@ services:
       - ${DATA_PATH}:/opt
     environment:
       - TZ=${TIME_ZONE}
-    image: moelin/1panel:latest-ppc64le
+    image: moelin/1panel:latest
     labels:  
       createdBy: "Apps"
