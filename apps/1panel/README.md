@@ -14,6 +14,7 @@
 ***
 - 不可调整参数
   - `/var/run/docker.sock`的相关映射
+  - `/var/lib/docker/volumes:/var/lib/docker/volumes` 存储卷映射
  ***
 - 可调整参数
   - `/www/data/1panel-data:/opt`                        文件存储映射
@@ -22,28 +23,14 @@
 ***
 **架构平台对应镜像**
 - amd64
+- arm64
+- armv7
+- ppc64le
+- s390x
+> 2023年9月3日已经更新单标签多镜像
 ```
 docker pull moelin/1panel:latest
 ```
-- arm64
-```
-docker pull moelin/1panel:latest-arm64
-```
-- armv7
-```
-docker pull moelin/1panel:latest-armv7
-```
-- ppc64le
-```
-docker pull moelin/1panel:latest-ppc64le
-```
-- s390x
-```
-docker pull moelin/1panel:latest-s390x
-```
-
-
-
 
 # 原始相关
 ***
