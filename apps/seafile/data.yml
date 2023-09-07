@@ -13,7 +13,7 @@ additionalProperties:
     shortDescEn: An open source cloud storage system with privacy protection and teamwork features
     type: tool
     crossVersionUpdate: true
-    limit: 0
+    limit: 1
     recommend: 0
     website: https://www.seafile.com
     github: https://github.com/haiwen/seafile

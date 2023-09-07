@@ -18,7 +18,7 @@ additionalProperties:
           type: number
         - default: ""
           edit: true
-          envKey: REDIS_PASSWORD
+          envKey: PANEL_REDIS_ROOT_PASSWORD
           labelEn: Redis Service Password
           labelZh: Redis服务密码
           required: true

@@ -14,12 +14,12 @@
 ***
 - 不可调整参数
   - `/var/run/docker.sock`的相关映射
-  - `/var/lib/docker/volumes:/var/lib/docker/volumes` 存储卷映射
  ***
 - 可调整参数
   - `/www/data/1panel-data:/opt`                        文件存储映射
   - `TZ=Asia/Shanghai`                        时区设置
   - `1panel`                          容器名
+  - `/var/lib/docker/volumes:/var/lib/docker/volumes` 存储卷映射
 ***
 **架构平台对应镜像**
 - amd64

@@ -13,7 +13,7 @@ additionalProperties:
     shortDescEn: A spreadsheet/database like Airtable
     type: tool
     crossVersionUpdate: true
-    limit: 0
+    limit: 1
     recommend: 0
     website: https://seatable.cn
     github: https://github.com/seatable/seatable

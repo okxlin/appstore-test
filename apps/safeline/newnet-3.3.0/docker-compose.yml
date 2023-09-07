@@ -82,7 +82,7 @@ services:
     - LOG_DIR=/logs/mario
     - GOGC=100
     - DATABASE_URL=postgres://safeline-ce:${POSTGRES_PASSWORD}@safeline-postgres/safeline-ce
-    - REDIS_URL=redis://:${REDIS_PASSWORD}@${REDIS_HOST}:${REDIS_PORT}/0
+    - REDIS_URL=redis://:${PANEL_REDIS_ROOT_PASSWORD}@${REDIS_HOST}:${REDIS_PORT}/2
     cap_drop:
     - net_raw
     labels:
