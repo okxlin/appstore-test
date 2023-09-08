@@ -57,7 +57,7 @@ services:
       # 在其他音源搜索歌曲时携带专辑名称（默认搜索条件 `歌曲名 - 歌手`，启用后搜索条件 `歌曲名 - 歌手 专辑名`）
       - SEARCH_ALBUM=true
     #command: ["-o", "bilibili"]  # 设置要传递给容器的参数
-    image: pan93412/unblock-netease-music-enhanced:v0.27.3
+    image: pan93412/unblock-netease-music-enhanced:v0.27.4
     labels:  
       createdBy: "Apps"
 
