@@ -12,6 +12,7 @@ services:
       - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
     volumes:
       - "${DOWNLOAD_PATH}:/home/kasm-user/Downloads"
+      - "qbittorrent-vnc_data:/home/kasm-user"
     environment:
       - VNC_PW=${HTTP_PWD}
     shm_size: ${MEM_USE}
@@ -19,6 +20,9 @@ services:
     image: kasmweb/qbittorrent:develop
     labels:  
       createdBy: "Apps"
+
+volumes:
+  qbittorrent-vnc_data:
 
 networks:  
   1panel-network:  
