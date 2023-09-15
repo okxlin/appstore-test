@@ -9,7 +9,7 @@ services:
       - "${PANEL_APP_PORT_HTTP}:6412"
     volumes:
       - "${DATA_PATH}:/app/data"
-    image: mereith/van-nav:v1.8.7
+    image: mereith/van-nav:v1.9.0
     labels:  
       createdBy: "Apps"
 
