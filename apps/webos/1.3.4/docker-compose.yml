@@ -11,7 +11,7 @@ services:
       - "${DATA_PATH}/rootPath:/webos/api/rootPath"
       - "${DATA_PATH}/apps:/webos/web/apps"
     tty: true
-    image: fs185085781/webos:v1.3.4
+    image: fs185085781/webos:v1.3.5
     labels:  
       createdBy: "Apps"
 
