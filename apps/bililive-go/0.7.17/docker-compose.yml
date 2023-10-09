@@ -9,7 +9,7 @@ services:
       - "${PANEL_APP_PORT_HTTP}:8080"
     volumes:
       - "${DATA_PATH}:/srv/bililive"
-    image: chigusa/bililive-go:v0.7.17
+    image: chigusa/bililive-go:v0.7.18
     labels:  
       createdBy: "Apps"
 
