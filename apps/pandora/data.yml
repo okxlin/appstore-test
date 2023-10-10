@@ -15,6 +15,6 @@ additionalProperties:
     crossVersionUpdate: true
     limit: 0
     recommend: 0
-    website: https://github.com/pengzhile/pandora
-    github: https://github.com/pengzhile/pandora
-    document: https://github.com/pengzhile/pandora/blob/master/doc/wiki.md
+    website: https://github.com/zhile-io/pandora
+    github: https://github.com/zhile-io/pandora
+    document: https://github.com/zhile-io/pandora/blob/master/doc/wiki.md
