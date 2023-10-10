@@ -56,7 +56,8 @@ additionalProperties:
           required: true
           type: text
         - default: 172.18.0
-          disabled: true
+          #disabled: true
+          edit: true
           envKey: SUBNET_PREFIX
           labelEn: Subnet prefix
           labelZh: 子网前缀
