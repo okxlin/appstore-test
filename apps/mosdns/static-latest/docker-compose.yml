@@ -5,7 +5,7 @@ services:
     restart: always
     networks:
       1panel-network:
-        ipv4_address: 172.18.0.${SUBNET_SUFFIX}
+        ipv4_address: ${SUBNET}
     ports:
       - "${PANEL_APP_PORT_HTTP}:53/tcp"
       - "${PANEL_APP_PORT_HTTP}:53/udp"
