@@ -24,7 +24,7 @@ services:
         options:
           max-size: "5m"
     hostname: chinesesubfinder
-    image: allanpk716/chinesesubfinder:v0.53.3
+    image: allanpk716/chinesesubfinder:v0.54.4
     labels:  
       createdBy: "Apps"
 
