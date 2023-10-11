@@ -11,7 +11,7 @@ services:
       - TZ=Asia/Shanghai
       - ${ENV1}
     command: ${COMMAND1}
-    image: containrrr/watchtower:1.5.3
+    image: containrrr/watchtower:1.6.0
     labels:
       createdBy: "Apps"
 
