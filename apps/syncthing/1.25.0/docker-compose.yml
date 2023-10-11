@@ -19,7 +19,7 @@ services:
       - ${SYNCTHING_PORT}:22000/tcp
       - ${SYNCTHING_PORT}:22000/udp
       - ${SYNCTHING_PORT_EXTRA_UDP}:21027/udp
-    image: linuxserver/syncthing:1.24.0
+    image: linuxserver/syncthing:1.25.0
     labels:
       createdBy: "Apps"
 
