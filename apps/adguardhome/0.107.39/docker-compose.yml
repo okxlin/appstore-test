@@ -23,7 +23,7 @@ services:
     volumes:
       - ${WORK_PATH}:/opt/adguardhome/work
       - ${CONFIG_PATH}:/opt/adguardhome/conf
-    image: adguard/adguardhome:v0.107.38
+    image: adguard/adguardhome:v0.107.39
     labels:  
       createdBy: "Apps" 
 
