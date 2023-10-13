@@ -58,7 +58,7 @@ additionalProperties:
         - default: 169.254.0
           edit: true
           envKey: SUBNET_PREFIX
-          labelEn: Subnet prefix
-          labelZh: 子网前缀
+          labelEn: New docker network subnet prefix
+          labelZh: 新 docker 网络子网前缀
           required: true
           type: text
