@@ -5,7 +5,8 @@ services:
     restart: always
     network_mode: "host"
     volumes:
-        - "${CONFIG_FILE_PATH}:/etc/frp/frpc.ini"
+        #- "${CONFIG_FILE_PATH}:/etc/frp/frpc.ini" #截止5.1.3版本使用ini
+        - "${CONFIG_FILE_PATH}:/etc/frp/frpc.toml"
     image: "snowdreamtech/frpc:latest"
     labels:  
       createdBy: "Apps"
