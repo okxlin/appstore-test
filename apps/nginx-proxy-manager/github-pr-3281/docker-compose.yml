@@ -12,7 +12,7 @@ services:
     volumes:
       - "${DATA_PATH}:/data"
       - "${SSL_PATH}:/etc/letsencrypt"
-    image: jc21/nginx-proxy-manager:github-pr-3027
+    image: jc21/nginx-proxy-manager:github-pr-3281
     labels:  
       createdBy: "Apps"
 
