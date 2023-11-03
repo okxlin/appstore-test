@@ -1,15 +1,15 @@
 additionalProperties:
     formFields:
-        - default: ""
-          edit: true
+        - default: "safeline-redis"
+          disabled: true
           envKey: REDIS_HOST
           key: redis
           labelEn: Redis Service
           labelZh: Redis服务
           required: true
-          type: service
+          type: text
         - default: "6379"
-          edit: true
+          disabled: true
           envKey: REDIS_PORT
           labelEn: Redis Service Port
           labelZh: Redis服务端口
