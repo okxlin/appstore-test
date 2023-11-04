@@ -121,7 +121,7 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.233
-    image: redis:7.2.2
+    image: redis:7.2.3
     volumes:
       - ${SAFELINE_DIR}/resources/redis/data:/data
       - /etc/localtime:/etc/localtime:ro
