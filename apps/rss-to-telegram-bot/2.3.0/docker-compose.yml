@@ -40,7 +40,7 @@ services:
       #- NO_UVLOOP=1  # default: 0
       #- MULTIPROCESSING=1  # default: 0
       #- DEBUG=1  # debug logging, default: 0
-    image: rongronggg9/rss-to-telegram:2.2.1
+    image: rongronggg9/rss-to-telegram:2.3.0
     labels:
       createdBy: Apps
 networks:
