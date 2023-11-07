@@ -18,13 +18,18 @@ kcpBindPort = 7000
 #vhostHTTPSPort = 40443
 #subDomainHost = "example.com"
 
+# tls
+tls.force = false
+#transport.tls.certFile = "/etc/frp/server.crt"
+#transport.tls.keyFile = "/etc/frp/server.key"
+#transport.tls.trustedCaFile = "/etc/frp/ca.crt"
+
 # dashboard
 webServer.addr = "0.0.0.0"
 webServer.port = 7001
 webServer.user = "admin"
 webServer.password = "password123456"
 webServer.pprofEnable = false
-tls.force = false
 # webServer.tls.certFile = "server.crt"
 # webServer.tls.keyFile = "server.key"
 
