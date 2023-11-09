@@ -124,7 +124,7 @@ services:
       1panel-network:
       safeline-ce:
         ipv4_address: ${SUBNET_PREFIX}.3
-    image: redis:7.2.2
+    image: redis:7.2.3
     volumes:
       - ${SAFELINE_DIR}/resources/redis/data:/data
       - /etc/localtime:/etc/localtime:ro
