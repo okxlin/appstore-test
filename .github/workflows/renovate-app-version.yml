@@ -1,8 +1,6 @@
 name: Update app version in Renovate Branches
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
   push:
     branches: [ 'renovate/*' ]
   workflow_dispatch:
@@ -10,7 +8,6 @@ on:
       manual-trigger:
         description: 'Manually trigger Renovate'
         default: ''
-
 jobs:
   update-app-version:
     runs-on: ubuntu-latest
@@ -50,6 +47,6 @@ jobs:
           for file in "${files[@]}"; do
             if [[ $file == *"docker-compose.yml"* ]]; then
               app_name=$(echo $file | cut -d'/' -f 2)
-              git add "apps/$app_name/*" && git commit -m "Update app version" --no-verify && git push || true
+              git add "apps/$app_name/*" && git commit -m "Update app version [skip ci]" --no-verify && git push || true
             fi
           done
