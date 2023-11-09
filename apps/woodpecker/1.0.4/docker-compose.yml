@@ -64,7 +64,7 @@ services:
     environment:
       - WOODPECKER_SERVER=woodpecker-server:9000
       - WOODPECKER_AGENT_SECRET=${WOODPECKER_AGENT_SECRET}
-    image: woodpeckerci/woodpecker-server:v1.0.4
+    image: woodpeckerci/woodpecker-server:v1.0.5
     labels:  
       createdBy: "Apps"
 
