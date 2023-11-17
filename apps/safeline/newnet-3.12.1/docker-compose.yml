@@ -79,7 +79,7 @@ services:
   safeline-tengine:
     container_name: ${CONTAINER_NAME}-tengine
     restart: always
-    image: chaitin/safeline-tengine:3.12.1
+    image: chaitin/safeline-tengine:3.12.2
     volumes:
     - ${SAFELINE_DIR}/resources/nginx:/etc/nginx
     - ${SAFELINE_DIR}/resources/management:/resources/management
