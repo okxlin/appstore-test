@@ -7,7 +7,7 @@ services:
       1panel-network:
       safeline-ce:
         ipv4_address: ${SUBNET_PREFIX}.4
-    image: chaitin/safeline-mgt-api:3.16.0
+    image: chaitin/safeline-mgt-api:3.16.1
     volumes:
     - ${SAFELINE_DIR}/resources/management:/resources/management
     - ${SAFELINE_DIR}/resources/nginx:/resources/nginx
