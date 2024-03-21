@@ -59,7 +59,7 @@ services:
     restart: always
     networks:
       - 1panel-network
-    image: "redis:6.2-alpine@sha256:c5a607fb6e1bb15d32bbcf14db22787d19e428d59e31a5da67511b49bb0f1ccc"
+    image: "redis:6.2-alpine@sha256:3fcb624d83a9c478357f16dc173c58ded325ccc5fd2a4375f3916c04cc579f70"
     labels:  
       createdBy: "Apps"
 
