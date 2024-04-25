@@ -119,7 +119,7 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.238
-    image: chaitin/safeline-fvm:5.4.0
+    image: chaitin/safeline-fvm:5.4.1
     volumes:
       - /etc/localtime:/etc/localtime:ro
     logging:
