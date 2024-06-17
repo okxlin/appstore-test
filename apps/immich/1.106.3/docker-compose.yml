@@ -4,7 +4,7 @@ services:
     restart: always
     networks:
       - 1panel-network
-    image: altran1502/immich-server:v1.106.3
+    image: altran1502/immich-server:v1.106.4
     command: [ "start.sh", "immich" ]
     volumes:
       - ${UPLOAD_LOCATION}:/usr/src/app/upload
@@ -24,7 +24,7 @@ services:
     restart: always
     networks:
       - 1panel-network
-    image: altran1502/immich-server:v1.106.3
+    image: altran1502/immich-server:v1.106.4
     # extends:
     #   file: hwaccel.yml
     #   service: hwaccel
