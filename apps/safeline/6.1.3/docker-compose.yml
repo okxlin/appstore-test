@@ -129,7 +129,7 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.239
-    image: chaitin/safeline-bridge:6.1.3
+    image: chaitin/safeline-bridge:6.2.0
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run:/app/run
