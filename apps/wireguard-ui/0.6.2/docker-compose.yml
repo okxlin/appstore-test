@@ -22,7 +22,7 @@ services:
     volumes:
       - ./data/db:/app/db
       - ./data/config:/etc/wireguard
-    image: ngoduykhanh/wireguard-ui:0.6.2
+    image: ngoduykhanh/wireguard-ui:0.2.3
     logging:
       driver: json-file
       options:
