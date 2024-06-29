@@ -8,7 +8,7 @@ services:
       - "${PANEL_APP_PORT_HTTP}:9090"
     volumes:
       - "./data:/etc/prometheus"
-    image: prom/prometheus:v2.53.0
+    image: prom/prometheus:v2.40.5
     labels:  
       createdBy: "Apps"
 
