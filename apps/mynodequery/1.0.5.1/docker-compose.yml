@@ -11,7 +11,7 @@ services:
     logging:
       options:
         max-size: 256MB
-    image: jaydenlee2019/mynodequery:1.0.5.1
+    image: jaydenlee2019/mynodequery:1.0.4.1
     labels:  
       createdBy: "Apps"
 
