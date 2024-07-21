@@ -1,0 +1,10 @@
+services:
+  mihomo:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    network_mode: "host"
+    volumes:
+      - ./mihomo:/root/.config/mihomo
+    image: metacubex/mihomo:latest
+    labels:  
+      createdBy: "Apps"
