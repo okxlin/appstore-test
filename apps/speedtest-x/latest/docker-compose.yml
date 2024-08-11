@@ -14,7 +14,8 @@ services:
     image: badapple9/speedtest-x:latest
     labels:  
       createdBy: "Apps"
-
+    volumes:
+      - ./data/speedlogs:/speedlogs
 networks:  
   1panel-network:  
     external: true
