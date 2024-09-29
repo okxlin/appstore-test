@@ -46,7 +46,7 @@ services:
   safeline-tengine:
     container_name: ${CONTAINER_NAME}-tengine
     restart: always
-    image: chaitin/safeline-tengine:6.10.4
+    image: chaitin/safeline-tengine:6.10.5
     volumes:
     - /etc/localtime:/etc/localtime:ro
     - /etc/resolv.conf:/etc/resolv.conf:ro
