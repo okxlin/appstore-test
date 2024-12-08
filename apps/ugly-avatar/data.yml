@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 丑陋头像生成器
     shortDescEn: Ugly Avatar Generator
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

@@ -2,7 +2,6 @@ name: Moments
 tags:
     - 建站
 title: 一个 C# 开发的博客朋友圈平台
-type: 建站
 description: 一个 C# 开发的博客朋友圈平台
 additionalProperties:
     key: moments

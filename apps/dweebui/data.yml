@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 一个用于管理容器的 WebUI
     shortDescEn: A WebUI for managing your containers
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 媒体下载工具
     shortDescEn: Media downloader tool
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

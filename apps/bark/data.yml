@@ -10,7 +10,6 @@ additionalProperties:
         - DevTool
     shortDescZh: iOS 消息推送工具
     shortDescEn: iOS message push tool
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

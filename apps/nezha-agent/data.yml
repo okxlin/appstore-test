@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 哪吒监控 - Agent
     shortDescEn: Nezha Monitoring - Agent
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

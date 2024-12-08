@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 自托管、注重隐私的网站分析
     shortDescEn: Self-hostable, privacy-focused website analytics
-    type: tool
     crossVersionUpdate: true
     limit: 1
     recommend: 0

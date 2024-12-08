@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 极光面板-一个多服务器端口租用管理面板
     shortDescEn: A multi-server port leasing management panel
-    type: tool
     crossVersionUpdate: true
     limit: 1
     recommend: 0

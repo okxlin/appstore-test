@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 一个免费的个人媒体服务器
     shortDescEn: A free personal media server
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

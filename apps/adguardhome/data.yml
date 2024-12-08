@@ -10,7 +10,6 @@ additionalProperties:
         - Security
     shortDescZh: 自由且开源的，功能强大的网络广告和跟踪器屏蔽DNS服务器
     shortDescEn: Free and open source, powerful network-wide ads & trackers blocking DNS server
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

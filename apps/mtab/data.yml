@@ -10,7 +10,6 @@ additionalProperties:
     - Website
   shortDescZh: 书签导航程序
   shortDescEn: Bookmark navigator
-  type: website
   crossVersionUpdate: true
   limit: 0
   recommend: 0

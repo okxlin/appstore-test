@@ -10,7 +10,6 @@ additionalProperties:
     - Tool
   shortDescZh: Cloudflare Tunnel 客户端
   shortDescEn: Client for Cloudflare Tunnel
-  type: tool
   crossVersionUpdate: true
   limit: 0
   website: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/

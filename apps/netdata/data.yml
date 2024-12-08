@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 一个实时监控工具
     shortDescEn: Real-time monitoring tool
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

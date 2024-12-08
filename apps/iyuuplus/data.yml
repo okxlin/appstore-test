@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 自动辅种工具
     shortDescEn: Automatic seeding tools
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

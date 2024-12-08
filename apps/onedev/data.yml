@@ -10,7 +10,6 @@ additionalProperties:
         - DevOps
     shortDescZh: 具有 CI/CD 和 Kanban 的自托管 Git 服务器
     shortDescEn: Self-hosted Git Server with CI/CD and Kanban
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

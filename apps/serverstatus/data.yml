@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 多服务器状态监控
     shortDescEn: Multi-server status monitoring
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

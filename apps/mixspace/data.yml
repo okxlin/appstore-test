@@ -2,7 +2,6 @@ name: MixSpace
 tags:
   - 建站
 title: 开源自部署个人前后端分离博客系统
-type: 建站
 description: 开源自部署个人前后端分离博客系统
 additionalProperties:
   key: mixspace

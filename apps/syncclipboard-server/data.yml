@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 跨平台剪贴板同步方案 (服务端)
     shortDescEn: Cross-Platform Cipboard Syncing Solution (Server)
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

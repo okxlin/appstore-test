@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 一个开源的实时视频监控系统
     shortDescEn: NVR With Realtime Object Detection for IP Cameras
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

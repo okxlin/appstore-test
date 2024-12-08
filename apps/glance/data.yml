@@ -10,7 +10,6 @@ additionalProperties:
         - Website
     shortDescZh: 一个自托管仪表板
     shortDescEn: A self-hosted dashboard
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

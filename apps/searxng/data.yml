@@ -2,7 +2,6 @@ name: SearXNG
 tags:
     - 建站
 title: 一个免费的互联网元聚合搜索引擎
-type: 建站
 description: 一个免费的互联网元聚合搜索引擎
 additionalProperties:
     key: searxng

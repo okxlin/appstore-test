@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 在 Docker 中运行 Android
     shortDescEn: Run Android in Docker
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

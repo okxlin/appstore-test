@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: NAS 媒体库管理工具
     shortDescEn: NAS Media Library Management Tools
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

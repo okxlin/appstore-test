@@ -10,7 +10,6 @@ additionalProperties:
         - Storage
     shortDescZh: 阿里云盘 WebDAV 服务
     shortDescEn: AliyunDrive WebDAV Service
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

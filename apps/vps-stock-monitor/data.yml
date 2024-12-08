@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: VPS 库存监控工具
     shortDescEn: VPS Stock Monitor Tool
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

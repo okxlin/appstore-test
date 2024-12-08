@@ -10,7 +10,6 @@ additionalProperties:
         - Email
     shortDescZh: 开源的电子邮件客户端
     shortDescEn: Open-source email client
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

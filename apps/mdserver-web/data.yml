@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 一款简单 Linux 面板服务
     shortDescEn: A simple Linux panel service
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

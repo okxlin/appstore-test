@@ -2,7 +2,6 @@ name: FOSSBilling
 tags:
     - 建站
 title: 一款用于高效计费和客户管理的免费开源解决方案
-type: 建站
 description: 一款用于高效计费和客户管理的免费开源解决方案
 additionalProperties:
     key: fossbilling

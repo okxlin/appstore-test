@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 摄影佬专用相片集
     shortDescEn: Photo Album for Photographers
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

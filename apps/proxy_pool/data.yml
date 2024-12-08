@@ -10,7 +10,6 @@ additionalProperties:
         - DevTool
     shortDescZh: 爬虫代理 IP 池
     shortDescEn: Python ProxyPool for web spider
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

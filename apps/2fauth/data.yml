@@ -10,7 +10,6 @@ additionalProperties:
         - Security
     shortDescZh: 开源双因素认证管理器
     shortDescEn: Open-source two-factor authentication manager
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

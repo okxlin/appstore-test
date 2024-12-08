@@ -2,7 +2,6 @@ name: Hexo
 tags:
     - 建站
 title: 快速、简洁且高效的博客框架
-type: 建站
 description: 快速、简洁且高效的博客框架
 additionalProperties:
     key: hexo

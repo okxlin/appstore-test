@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 个人记账工具
     shortDescEn: Personal finance management tool
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

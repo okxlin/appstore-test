@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 基于 telegraph 的图床，图片大于 5MB 自动压缩
     shortDescEn: Telegraph-based graph bed with automatic compression for images larger than 5MB
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

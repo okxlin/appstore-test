@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 将节点和订阅转换为 clash(meta) 配置
     shortDescEn: Converting nodes and subscriptions to clash(meta) configuration
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

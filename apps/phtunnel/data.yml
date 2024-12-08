@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 花生壳内网穿透服务
     shortDescEn: Best Oray Intranet Penetration Service
-    type: tool
     crossVersionUpdate: true
     limit: 1
     recommend: 0

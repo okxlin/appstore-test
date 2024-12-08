@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 全自动追番工具
     shortDescEn: Automated anime tracking tool
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 高性能的自托管照片和视频备份方案
     shortDescEn: High performance self-hosted photo and video backup solution
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

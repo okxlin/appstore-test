@@ -10,7 +10,6 @@ additionalProperties:
         - DevOps
     shortDescZh: Gitea Actions 的 Runner
     shortDescEn: A runner for Gitea based on Gitea fork of act
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

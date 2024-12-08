@@ -10,7 +10,6 @@ additionalProperties:
         - AI
     shortDescZh: 潘多拉，一个让你呼吸顺畅的 ChatGPT
     shortDescEn: Pandora, a ChatGPT that helps you breathe smoothly
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

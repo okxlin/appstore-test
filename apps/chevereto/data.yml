@@ -10,7 +10,6 @@ additionalProperties:
         - Website
     shortDescZh: 一个图像托管平台
     shortDescEn: An image hosting platform
-    type: website
     crossVersionUpdate: true
     limit: 0
     recommend: 0

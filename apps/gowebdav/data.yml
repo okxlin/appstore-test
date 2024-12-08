@@ -12,7 +12,6 @@ additionalProperties:
         - Tool
     shortDescZh: 轻量易用的 WebDAV 服务器
     shortDescEn: Lightweight and easy-to-use WebDAV server
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

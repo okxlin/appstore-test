@@ -10,7 +10,6 @@ additionalProperties:
         - Email
     shortDescZh: 开源的电子邮件客户端 (Kasm)
     shortDescEn: Open-source email client (Kasm)
-    type: tool
     crossVersionUpdate: true
     limit: 1
     recommend: 0

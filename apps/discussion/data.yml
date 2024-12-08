@@ -10,7 +10,6 @@ additionalProperties:
         - Website
     shortDescZh: 极简论坛
     shortDescEn: Minimalist forum
-    type: website
     crossVersionUpdate: true
     limit: 0
     recommend: 0

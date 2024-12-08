@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 一个 Linux 服务器 WEB SSH 面板
     shortDescEn: A Linux server WEB SSH panel
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

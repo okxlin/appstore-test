@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: Go 语言 Web 管理面板
     shortDescEn: Go Language Web Management Panel
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

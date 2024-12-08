@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 媒体管理工具
     shortDescEn: Media Management Tools
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

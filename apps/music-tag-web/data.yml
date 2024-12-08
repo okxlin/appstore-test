@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 一款可以编辑歌曲的标题，专辑，艺术家，歌词，封面等信息的应用程序
     shortDescEn: An app that can edit the title, album, artist, lyrics, cover, and more of the song
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

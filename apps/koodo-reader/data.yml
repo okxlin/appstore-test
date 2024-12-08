@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 一个跨平台的电子书阅读器
     shortDescEn: A cross-platform ebook reader
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

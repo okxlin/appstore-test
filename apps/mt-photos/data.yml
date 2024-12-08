@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: 一款简单、好用的照片管理系统
     shortDescEn: A simple, easy-to-use photo management system
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

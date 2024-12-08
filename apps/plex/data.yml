@@ -10,7 +10,6 @@ additionalProperties:
         - Media
     shortDescZh: Plex 媒体服务器
     shortDescEn: Plex Media Server
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

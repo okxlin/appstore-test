@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: Microsoft Edge Insider 预览版
     shortDescEn: Microsoft Edge Insider Preview
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

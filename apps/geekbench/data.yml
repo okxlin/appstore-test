@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 基准测试工具 Docker 版
     shortDescEn: Benchmarking tool Docker version
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

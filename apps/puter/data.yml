@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 先进的开源互联网操作系统
     shortDescEn: An advanced, open-source internet operating system
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

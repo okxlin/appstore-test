@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 将节点和订阅转换为 sing-box 配置
     shortDescEn: Converting nodes and subscriptions to sing-box configuration
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

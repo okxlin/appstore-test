@@ -12,7 +12,6 @@ additionalProperties:
         - Security
     shortDescZh: 开源 VPN 解决方案
     shortDescEn: Open-source VPN solution
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

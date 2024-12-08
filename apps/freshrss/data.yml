@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 自托管的 RSS 和 Atom 订阅源聚合器
     shortDescEn: A self-hosted RSS and Atom feed aggregator
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0

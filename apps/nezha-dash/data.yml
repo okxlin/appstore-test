@@ -10,7 +10,6 @@ additionalProperties:
         - Tool
     shortDescZh: 一个基于 Next.js 和 哪吒监控 的仪表盘
     shortDescEn: A dashboard based on Next.exe and Nezha monitoring
-    type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0
