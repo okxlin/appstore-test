@@ -29,7 +29,7 @@ additionalProperties:
       labelZh: 访问密码
       random: true
       required: false
-      rule: paramComplexity 
+      rule: paramComplexity
       type: password
     - default: ""
       edit: true

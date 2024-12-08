@@ -90,11 +90,17 @@ additionalProperties:
       labelZh: 服务端主机名 (域名 或 IP)
       required: true
       type: text
-    #- default: 40130
-    #  edit: true
-    #  envKey: PANEL_APP_PORT_HTTPS
-    #  labelEn: HTTPS Port
-    #  labelZh: HTTPS 端口
-    #  required: true
-    #  rule: paramPort
-    #  type: number
+  #- default: 40130
+#  edit: true
+
+#  envKey: PANEL_APP_PORT_HTTPS
+
+#  labelEn: HTTPS Port
+
+#  labelZh: HTTPS 端口
+
+#  required: true
+
+#  rule: paramPort
+
+#  type: number

@@ -42,7 +42,7 @@ additionalProperties:
       labelEn: Database Port Number
       labelZh: 数据库端口号
       required: true
-      rule: paramPort 
+      rule: paramPort
       type: number
     - default: "blinko"
       envKey: PANEL_DB_NAME

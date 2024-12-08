@@ -23,7 +23,7 @@ additionalProperties:
       labelZh: 只读容器
       required: false
       type: select
-      values: 
+      values:
         - label: "True"
           value: "true"
         - label: "False"
@@ -104,7 +104,7 @@ additionalProperties:
       labelEn: Site URL
       labelZh: 站点 URL
       required: true
-      rule: paramExtUrl 
+      rule: paramExtUrl
       type: text
     - default: postgresql
       envKey: PANEL_DB_TYPE

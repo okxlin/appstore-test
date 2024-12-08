@@ -26,7 +26,7 @@ additionalProperties:
       edit: true
       envKey: NEXT_PUBLIC_NezhaFetchInterval
       labelEn: Nezha Fetch Interval
-      labelZh: 	获取数据间隔（毫秒）
+      labelZh: 获取数据间隔（毫秒）
       required: true
       type: number
     - default: "https://nezha-cf.buycoffee.top/apple-touch-icon.png"
@@ -58,14 +58,14 @@ additionalProperties:
       required: true
       type: select
       values:
-          - label: "简体中文"
-            value: "zh"
-          - label: "繁体中文"
-            value: "zh-t"
-          - label: "English"
-            value: "en"
-          - label: "日本語"
-            value: "ja"
+        - label: "简体中文"
+          value: "zh"
+        - label: "繁体中文"
+          value: "zh-t"
+        - label: "English"
+          value: "en"
+        - label: "日本語"
+          value: "ja"
     - default: "false"
       edit: true
       envKey: ForceShowAllServers
@@ -74,10 +74,10 @@ additionalProperties:
       required: true
       type: select
       values:
-          - label: "True"
-            value: "true"
-          - label: "False"
-            value: "false"
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
     - default: "false"
       edit: true
       envKey: NEXT_PUBLIC_ShowFlag
@@ -86,10 +86,10 @@ additionalProperties:
       required: true
       type: select
       values:
-          - label: "True"
-            value: "true"
-          - label: "False"
-            value: "false"
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
     - default: "false"
       edit: true
       envKey: NEXT_PUBLIC_DisableCartoon
@@ -98,10 +98,10 @@ additionalProperties:
       required: true
       type: select
       values:
-          - label: "True"
-            value: "true"
-          - label: "False"
-            value: "false"
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
     - default: "false"
       edit: true
       envKey: NEXT_PUBLIC_ShowTag
@@ -110,10 +110,10 @@ additionalProperties:
       required: true
       type: select
       values:
-          - label: "True"
-            value: "true"
-          - label: "False"
-            value: "false"
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
     - default: "false"
       edit: true
       envKey: NEXT_PUBLIC_ShowNetTransfer
@@ -122,10 +122,10 @@ additionalProperties:
       required: true
       type: select
       values:
-          - label: "True"
-            value: "true"
-          - label: "False"
-            value: "false"
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
     - default: "false"
       edit: true
       envKey: NEXT_PUBLIC_ForceUseSvgFlag
@@ -134,7 +134,7 @@ additionalProperties:
       required: true
       type: select
       values:
-          - label: "True"
-            value: "true"
-          - label: "False"
-            value: "false"
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
